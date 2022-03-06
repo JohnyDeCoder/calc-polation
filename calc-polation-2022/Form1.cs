@@ -1,11 +1,25 @@
+using FontAwesome.Sharp;
+
 namespace calc_polation_2022
 {
     public partial class CALPO_Form : Form
     {
+        // Campos.
+        private IconButton currentBtn;
+        private Panel btnBorderLeft;
+
+
+        // Constructor.
         public CALPO_Form()
         {
             InitializeComponent();
+
+            // Botón lateral del botón.
+            btnBorderLeft = new Panel();
+            btnBorderLeft.Size = new Size(8, 45);
+            panel_lateral.Controls.Add(btnBorderLeft);
         }
+
         private void Inicio_Load(object sender, EventArgs e)
         {
             // Carga inicial del formulario principal.
@@ -15,6 +29,8 @@ namespace calc_polation_2022
 
         private void btn_interpolacion_Click(object sender, EventArgs e)
         {
+            buttonActivate(sender);
+
             if (panel_sub_interpolacion.Visible == true)
             {
                 panel_sub_interpolacion.Visible = false;
@@ -50,6 +66,8 @@ namespace calc_polation_2022
 
         private void btn_lagrange_Click(object sender, EventArgs e)
         {
+            buttonActivate(sender);
+
             CALPO_Lagrange showForm = new CALPO_Lagrange();
             openForm(showForm); //Muestra del formulario.
 
@@ -58,6 +76,8 @@ namespace calc_polation_2022
 
         private void btn_help_Click(object sender, EventArgs e)
         {
+            buttonActivate(sender);
+
             if (panel_sub_help.Visible == true)
             {
                 panel_sub_help.Visible = false;
@@ -88,6 +108,16 @@ namespace calc_polation_2022
             hideSubMenus();
         }
 
+        private void btn_repository_Click(object sender, EventArgs e)
+        {
+            buttonActivate(sender);
+
+            CALPO_About showForm = new CALPO_About();
+            openForm(showForm); //Muestra del formulario
+
+            hideSubMenus();
+        }
+
         private void btn_exit_Click(object sender, EventArgs e)
         {
             Close();
@@ -101,7 +131,7 @@ namespace calc_polation_2022
             showForm.TopLevel = false;
             showForm.FormBorderStyle = FormBorderStyle.None;
             showForm.Dock = DockStyle.Fill;
-            showForm.BringToFront();
+            showForm.BringToFront(); // Traer al frente.
 
             panel_form.Controls.Add(showForm);
 
@@ -113,6 +143,58 @@ namespace calc_polation_2022
             // Oculta submenús.
             panel_sub_interpolacion.Visible = false;
             panel_sub_help.Visible = false;
+        }
+
+        private void buttonActivate(object senderBtn)
+        {
+            if (senderBtn != null)
+            {
+                disableButtonActive();
+
+                // Botón.
+                currentBtn = (IconButton)senderBtn;
+                // currentBtn.BackColor = Color.FromArgb(40, 116, 166); // Backgroud color button.
+                currentBtn.ForeColor = Color.White;
+                currentBtn.IconColor = Color.White;
+                currentBtn.TextAlign = ContentAlignment.MiddleCenter;
+                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                currentBtn.ImageAlign = ContentAlignment.MiddleRight;
+
+                // Borde del botón latreral.
+                btnBorderLeft.BackColor = Color.FromArgb(241, 196, 15); // Background color lateral button.
+                if (currentBtn == btn_interpolacion)
+                {
+                    btnBorderLeft.Location = new Point(0, 100);
+                }
+                else if (currentBtn == btn_lagrange)
+                {
+                    btnBorderLeft.Location = new Point(0, 145);
+                }
+                else if (currentBtn == btn_help)
+                {
+                    btnBorderLeft.Location = new Point(0, 190);
+                }
+                else
+                {
+                    btnBorderLeft.Location = new Point(0, 235);
+                }
+                
+                btnBorderLeft.Visible = true;
+                btnBorderLeft.BringToFront(); // Traer al frente.
+            }
+        }
+
+        private void disableButtonActive()
+        {
+            if (currentBtn != null)
+            {
+                currentBtn.BackColor = Color.FromArgb(36, 113, 163);
+                currentBtn.ForeColor = Color.White;
+                currentBtn.IconColor = Color.White;
+                currentBtn.TextAlign = ContentAlignment.MiddleLeft;
+                currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
+                currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
+            }
         }
         // FIN de Métodos.
     }

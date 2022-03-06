@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EKmjXCZZI8cADzotx270u9VEvERIx7UMxR9oRwHN74hvB3IyQHwZn/jsYKarit5TSepH6SvG98XWYslk14ppug==",
+  "dgSpecHash": "3yanaf9NcfLfhwaHt8kf8LCz2P/MQYaTJ7XPbp7B5V1m0/AWC0s5tXQqCngPbaEPH+zvV866ESWTzRBCeVTV2g==",
   "success": true,
   "projectFilePath": "D:\\Documentos\\Proyectos individuales\\Programación\\Sistemas tradicionales\\Repositorios de GitHub\\calc-polation\\calc-polation-2022\\calc-polation-2022.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\johny\\.nuget\\packages\\font.awesome\\5.15.4\\font.awesome.5.15.4.nupkg.sha512",
+    "C:\\Users\\johny\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512"
+  ],
   "logs": []
 }
