@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "calc-polation-2022/1.0.0": {
+        "runtime": {
+          "calc-polation-2022.dll": {}
+        },
+        "resources": {
+          "es-MX/calc-polation-2022.resources.dll": {
+            "locale": "es-MX"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "calc-polation-2022/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
