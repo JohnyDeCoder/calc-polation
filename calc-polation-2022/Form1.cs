@@ -161,7 +161,7 @@ namespace calc_polation_2022
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
                 // Borde del botón latreral.
-                btnBorderLeft.BackColor = Color.FromArgb(74, 35, 90); // Background color lateral button.
+                btnBorderLeft.BackColor = Color.FromArgb(212, 172, 13); // Background color lateral button.
                 if (currentBtn == btn_interpolacion)
                 {
                     btnBorderLeft.Location = new Point(0, 100);
