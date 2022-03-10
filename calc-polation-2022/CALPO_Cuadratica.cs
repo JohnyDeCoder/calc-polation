@@ -20,7 +20,9 @@ namespace calc_polation_2022
         public string entre = " ÷ ";
         public string igual = " = ";
 
+#pragma warning disable CS8618 // Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.
         public CALPO_Cuadratica()
+#pragma warning restore CS8618 // Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.
         {
             InitializeComponent();
         }
@@ -285,7 +287,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result.ToString() == "NaN" || result.ToString().Contains("∞")) // Si hay algún error matemático.
+                        if (result.ToString() == "NaN" || result.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -404,7 +406,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result.ToString() == "NaN" || result.ToString().Contains("∞")) // Si hay algún error matemático.
+                        if (result.ToString() == "NaN" || result.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -523,7 +525,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result.ToString() == "NaN" || result.ToString().Contains("∞")) // Si hay algún error matemático.
+                        if (result.ToString() == "NaN" || result.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
