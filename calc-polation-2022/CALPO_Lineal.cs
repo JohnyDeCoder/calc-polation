@@ -28,7 +28,7 @@ namespace calc_polation_2022
 
         private void CALPO_Lineal_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         // INICIO de controles y componentes.

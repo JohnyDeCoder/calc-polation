@@ -16,5 +16,10 @@ namespace calc_polation_2022
         {
             InitializeComponent();
         }
+
+        private void CALPO_Cuadratica_Load(object sender, EventArgs e)
+        {
+                
+        }
     }
 }

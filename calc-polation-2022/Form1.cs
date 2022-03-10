@@ -126,7 +126,13 @@ namespace calc_polation_2022
         // INICIO de Métodos.
         private void openForm(Form showForm)
         {
-            // Abrir un formulario dentro de otro.
+            this.Text = showForm.Text;
+            // Abrir un formulario dentro de un panel.
+            if (panel_form.Controls.Count > 0) // Sí, existe algún elemento en el panel.
+            {
+                panel_form.Controls.RemoveAt(0); // Se elimina el formulario dentro del panel.
+            }
+
             showForm.TopLevel = false;
             showForm.FormBorderStyle = FormBorderStyle.None;
             showForm.Dock = DockStyle.Fill;
