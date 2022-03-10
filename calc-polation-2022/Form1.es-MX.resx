@@ -385,9 +385,6 @@
   <data name="panel_lateral.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 561</value>
   </data>
-  <data name="panel_form.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="panel_form.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
