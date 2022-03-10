@@ -8,7 +8,6 @@ namespace calc_polation_2022
         private IconButton currentBtn;
         private Panel btnBorderLeft;
 
-
         // Constructor.
         public CALPO_Form()
         {
