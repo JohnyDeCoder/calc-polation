@@ -81,6 +81,10 @@
   <data name="btn_repository.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 45</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btn_repository.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
   <data name="btn_repository.Text" xml:space="preserve">
     <value>Repositorio</value>
   </data>
@@ -111,9 +115,8 @@
   <data name="btn_exit.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 45</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_exit.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>5</value>
   </data>
   <data name="btn_exit.Text" xml:space="preserve">
     <value>Salir</value>
@@ -146,7 +149,7 @@
     <value>180, 41</value>
   </data>
   <data name="btn_help_about.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="btn_help_about.Text" xml:space="preserve">
     <value>Acerca de</value>
@@ -176,7 +179,7 @@
     <value>180, 40</value>
   </data>
   <data name="btn_usar.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="btn_usar.Text" xml:space="preserve">
     <value>Cómo usar</value>
@@ -218,7 +221,7 @@
     <value>180, 45</value>
   </data>
   <data name="btn_help.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>3</value>
   </data>
   <data name="btn_help.Text" xml:space="preserve">
     <value>Ayuda</value>
@@ -251,7 +254,7 @@
     <value>180, 45</value>
   </data>
   <data name="btn_lagrange.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>2</value>
   </data>
   <data name="btn_lagrange.Text" xml:space="preserve">
     <value>Polinomios de Lagrange</value>
@@ -284,7 +287,7 @@
     <value>180, 41</value>
   </data>
   <data name="btn_inter_cuadratica.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>7</value>
   </data>
   <data name="btn_inter_cuadratica.Text" xml:space="preserve">
     <value>Cuadrática</value>
@@ -314,7 +317,7 @@
     <value>180, 40</value>
   </data>
   <data name="btn_inter_lineal.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>6</value>
   </data>
   <data name="btn_inter_lineal.Text" xml:space="preserve">
     <value>Lineal</value>
@@ -356,7 +359,7 @@
     <value>180, 45</value>
   </data>
   <data name="btn_interpolacion.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>1</value>
   </data>
   <data name="btn_interpolacion.Text" xml:space="preserve">
     <value>Interpolación</value>
@@ -373,6 +376,9 @@
   <data name="panel_logo.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 100</value>
   </data>
+  <data name="panel_logo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="panel_lateral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>
   </data>
@@ -387,6 +393,9 @@
   </data>
   <data name="panel_form.Size" type="System.Drawing.Size, System.Drawing">
     <value>754, 561</value>
+  </data>
+  <data name="panel_form.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>934, 561</value>
