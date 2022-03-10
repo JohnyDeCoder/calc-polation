@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.gb_options = new System.Windows.Forms.GroupBox();
+            this.cb_calculate_percent = new System.Windows.Forms.CheckBox();
             this.gb_results_type = new System.Windows.Forms.GroupBox();
             this.rb_last4dec = new System.Windows.Forms.RadioButton();
             this.rb_redondeo = new System.Windows.Forms.RadioButton();
@@ -36,6 +37,8 @@
             this.btn_reset = new FontAwesome.Sharp.IconButton();
             this.btn_calculate = new FontAwesome.Sharp.IconButton();
             this.gb_values = new System.Windows.Forms.GroupBox();
+            this.txt_fx = new System.Windows.Forms.TextBox();
+            this.lbl_fx = new System.Windows.Forms.Label();
             this.txt_y1 = new System.Windows.Forms.TextBox();
             this.txt_x1 = new System.Windows.Forms.TextBox();
             this.txt_y0 = new System.Windows.Forms.TextBox();
@@ -48,7 +51,6 @@
             this.lbl_x = new System.Windows.Forms.Label();
             this.gb_results = new System.Windows.Forms.GroupBox();
             this.lbox_results = new System.Windows.Forms.ListBox();
-            this.btn_calculate_percent = new FontAwesome.Sharp.IconButton();
             this.gb_options.SuspendLayout();
             this.gb_results_type.SuspendLayout();
             this.gb_values.SuspendLayout();
@@ -57,7 +59,7 @@
             // 
             // gb_options
             // 
-            this.gb_options.Controls.Add(this.btn_calculate_percent);
+            this.gb_options.Controls.Add(this.cb_calculate_percent);
             this.gb_options.Controls.Add(this.gb_results_type);
             this.gb_options.Controls.Add(this.btn_reset);
             this.gb_options.Controls.Add(this.btn_calculate);
@@ -71,17 +73,29 @@
             this.gb_options.TabStop = false;
             this.gb_options.Text = "Opciones";
             // 
+            // cb_calculate_percent
+            // 
+            this.cb_calculate_percent.AutoSize = true;
+            this.cb_calculate_percent.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cb_calculate_percent.Location = new System.Drawing.Point(8, 170);
+            this.cb_calculate_percent.Name = "cb_calculate_percent";
+            this.cb_calculate_percent.Size = new System.Drawing.Size(126, 34);
+            this.cb_calculate_percent.TabIndex = 7;
+            this.cb_calculate_percent.Text = "Calcular error\r\nrelativo porcentual";
+            this.cb_calculate_percent.UseVisualStyleBackColor = true;
+            this.cb_calculate_percent.CheckedChanged += new System.EventHandler(this.cb_calculate_percent_CheckedChanged);
+            // 
             // gb_results_type
             // 
             this.gb_results_type.Controls.Add(this.rb_last4dec);
             this.gb_results_type.Controls.Add(this.rb_redondeo);
             this.gb_results_type.Controls.Add(this.rb_noRedondeo);
             this.gb_results_type.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_results_type.Location = new System.Drawing.Point(6, 222);
+            this.gb_results_type.Location = new System.Drawing.Point(6, 210);
             this.gb_results_type.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_results_type.Name = "gb_results_type";
             this.gb_results_type.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gb_results_type.Size = new System.Drawing.Size(139, 115);
+            this.gb_results_type.Size = new System.Drawing.Size(139, 127);
             this.gb_results_type.TabIndex = 2;
             this.gb_results_type.TabStop = false;
             this.gb_results_type.Text = "Tipo de Resultado";
@@ -90,7 +104,7 @@
             // 
             this.rb_last4dec.AutoSize = true;
             this.rb_last4dec.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rb_last4dec.Location = new System.Drawing.Point(6, 72);
+            this.rb_last4dec.Location = new System.Drawing.Point(8, 65);
             this.rb_last4dec.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rb_last4dec.Name = "rb_last4dec";
             this.rb_last4dec.Size = new System.Drawing.Size(78, 34);
@@ -102,7 +116,7 @@
             // 
             this.rb_redondeo.AutoSize = true;
             this.rb_redondeo.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rb_redondeo.Location = new System.Drawing.Point(6, 47);
+            this.rb_redondeo.Location = new System.Drawing.Point(8, 40);
             this.rb_redondeo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rb_redondeo.Name = "rb_redondeo";
             this.rb_redondeo.Size = new System.Drawing.Size(82, 19);
@@ -115,7 +129,7 @@
             this.rb_noRedondeo.AutoSize = true;
             this.rb_noRedondeo.Checked = true;
             this.rb_noRedondeo.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rb_noRedondeo.Location = new System.Drawing.Point(6, 22);
+            this.rb_noRedondeo.Location = new System.Drawing.Point(8, 15);
             this.rb_noRedondeo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.rb_noRedondeo.Name = "rb_noRedondeo";
             this.rb_noRedondeo.Size = new System.Drawing.Size(100, 19);
@@ -130,10 +144,10 @@
             this.btn_reset.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btn_reset.IconColor = System.Drawing.Color.Black;
             this.btn_reset.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_reset.Location = new System.Drawing.Point(6, 188);
+            this.btn_reset.Location = new System.Drawing.Point(6, 113);
             this.btn_reset.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_reset.Name = "btn_reset";
-            this.btn_reset.Size = new System.Drawing.Size(139, 28);
+            this.btn_reset.Size = new System.Drawing.Size(139, 51);
             this.btn_reset.TabIndex = 1;
             this.btn_reset.Text = "Reiniciar";
             this.btn_reset.UseVisualStyleBackColor = true;
@@ -148,14 +162,16 @@
             this.btn_calculate.Location = new System.Drawing.Point(6, 22);
             this.btn_calculate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btn_calculate.Name = "btn_calculate";
-            this.btn_calculate.Size = new System.Drawing.Size(139, 95);
+            this.btn_calculate.Size = new System.Drawing.Size(139, 85);
             this.btn_calculate.TabIndex = 0;
-            this.btn_calculate.Text = "Calcular\r\ninterpolación";
+            this.btn_calculate.Text = "Calcular\r";
             this.btn_calculate.UseVisualStyleBackColor = true;
             this.btn_calculate.Click += new System.EventHandler(this.btn_calculate_Click);
             // 
             // gb_values
             // 
+            this.gb_values.Controls.Add(this.txt_fx);
+            this.gb_values.Controls.Add(this.lbl_fx);
             this.gb_values.Controls.Add(this.txt_y1);
             this.gb_values.Controls.Add(this.txt_x1);
             this.gb_values.Controls.Add(this.txt_y0);
@@ -175,6 +191,31 @@
             this.gb_values.TabIndex = 2;
             this.gb_values.TabStop = false;
             this.gb_values.Text = "Valores";
+            // 
+            // txt_fx
+            // 
+            this.txt_fx.Enabled = false;
+            this.txt_fx.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_fx.Location = new System.Drawing.Point(430, 28);
+            this.txt_fx.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txt_fx.Name = "txt_fx";
+            this.txt_fx.PlaceholderText = "número";
+            this.txt_fx.ShortcutsEnabled = false;
+            this.txt_fx.Size = new System.Drawing.Size(289, 36);
+            this.txt_fx.TabIndex = 12;
+            this.txt_fx.Text = "0";
+            this.txt_fx.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_fx_KeyPress);
+            // 
+            // lbl_fx
+            // 
+            this.lbl_fx.AutoSize = true;
+            this.lbl_fx.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbl_fx.Location = new System.Drawing.Point(337, 30);
+            this.lbl_fx.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl_fx.Name = "lbl_fx";
+            this.lbl_fx.Size = new System.Drawing.Size(75, 28);
+            this.lbl_fx.TabIndex = 11;
+            this.lbl_fx.Text = "F(X) =";
             // 
             // txt_y1
             // 
@@ -205,7 +246,7 @@
             // txt_y0
             // 
             this.txt_y0.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txt_y0.Location = new System.Drawing.Point(430, 86);
+            this.txt_y0.Location = new System.Drawing.Point(430, 84);
             this.txt_y0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_y0.Name = "txt_y0";
             this.txt_y0.PlaceholderText = "número";
@@ -280,7 +321,7 @@
             this.txt_x.Name = "txt_x";
             this.txt_x.PlaceholderText = "número";
             this.txt_x.ShortcutsEnabled = false;
-            this.txt_x.Size = new System.Drawing.Size(655, 36);
+            this.txt_x.Size = new System.Drawing.Size(265, 36);
             this.txt_x.TabIndex = 6;
             this.txt_x.Text = "0";
             this.txt_x.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_x_KeyPress);
@@ -320,26 +361,10 @@
             "• f(x) = f(x₀) + f(x₁) - f(x₀) ÷ x₁ - x₀ (x - x₀)"});
             this.lbox_results.Location = new System.Drawing.Point(11, 22);
             this.lbox_results.Name = "lbox_results";
-            this.lbox_results.ScrollAlwaysVisible = true;
             this.lbox_results.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbox_results.Size = new System.Drawing.Size(551, 308);
             this.lbox_results.TabIndex = 4;
             this.lbox_results.TabStop = false;
-            // 
-            // btn_calculate_percent
-            // 
-            this.btn_calculate_percent.Font = new System.Drawing.Font("Malgun Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn_calculate_percent.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btn_calculate_percent.IconColor = System.Drawing.Color.Black;
-            this.btn_calculate_percent.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_calculate_percent.Location = new System.Drawing.Point(6, 123);
-            this.btn_calculate_percent.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.btn_calculate_percent.Name = "btn_calculate_percent";
-            this.btn_calculate_percent.Size = new System.Drawing.Size(139, 59);
-            this.btn_calculate_percent.TabIndex = 3;
-            this.btn_calculate_percent.Text = "Calcular error porcentual";
-            this.btn_calculate_percent.UseVisualStyleBackColor = true;
-            this.btn_calculate_percent.Click += new System.EventHandler(this.btn_calculate_percent_Click);
             // 
             // CALPO_Lineal
             // 
@@ -355,6 +380,7 @@
             this.Text = "CALPO: Interpolación Lineal";
             this.Load += new System.EventHandler(this.CALPO_Lineal_Load);
             this.gb_options.ResumeLayout(false);
+            this.gb_options.PerformLayout();
             this.gb_results_type.ResumeLayout(false);
             this.gb_results_type.PerformLayout();
             this.gb_values.ResumeLayout(false);
@@ -386,6 +412,8 @@
         private RadioButton rb_last4dec;
         private GroupBox gb_results;
         private ListBox lbox_results;
-        private FontAwesome.Sharp.IconButton btn_calculate_percent;
+        private TextBox txt_fx;
+        private Label lbl_fx;
+        private CheckBox cb_calculate_percent;
     }
 }
