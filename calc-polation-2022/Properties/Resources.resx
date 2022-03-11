@@ -112,19 +112,31 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=6.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Logotipo_Alternative" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\logotipo alternative.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BrandonMoran11_Avatar_GitHub_2022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BrandonMoran11_Avatar_GitHub_2022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JohnyDeCoder_Avatar_GitHub_2022" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JohnyDeCoder_Avatar_GitHub_2022.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="flag_mexico_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flag_mexico_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logotipo_Left_Panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logotipo left panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logotipo_Center_Panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\logotipo center panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logotipo_Left_Panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\logotipo left panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logotipo_Alternative" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\logotipo alternative.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="udec_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\udec_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

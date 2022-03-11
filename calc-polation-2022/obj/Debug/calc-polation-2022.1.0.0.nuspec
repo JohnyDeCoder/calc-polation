@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>calc-polation-2022</id>
+    <version>1.0.0</version>
+    <authors>calc-polation-2022</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="Font.Awesome" version="5.15.4" exclude="Build,Analyzers" />
+        <dependency id="FontAwesome.Sharp" version="5.15.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\es-MX\calc-polation-2022.resources.dll" target="lib\net6.0-windows7.0\es-MX\calc-polation-2022.resources.dll" />
+    <file src="D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\calc-polation-2022.runtimeconfig.json" target="lib\net6.0-windows7.0\calc-polation-2022.runtimeconfig.json" />
+    <file src="D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\calc-polation-2022.dll" target="lib\net6.0-windows7.0\calc-polation-2022.dll" />
+  </files>
+</package>

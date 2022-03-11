@@ -7,6 +7,9 @@
     <Compile Update="Forms\CALPO_Cuadratica.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\CALPO_Inicio_Image.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\CALPO_Lagrange.cs">
       <SubType>Form</SubType>
     </Compile>

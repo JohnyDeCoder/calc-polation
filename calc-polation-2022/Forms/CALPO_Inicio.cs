@@ -24,16 +24,14 @@ namespace calc_polation_2022
         private void Inicio_Load(object sender, EventArgs e)
         {
             // Carga inicial del formulario principal.
+            Forms.CALPO_Inicio_Image showForm = new Forms.CALPO_Inicio_Image();
+            openForm(showForm); //Muestra del formulario.
         }
 
         // INICIO de botones y componentes.
 
         private void picB_calpo_Click(object sender, EventArgs e)
         {
-            CALPO_Lineal showForm = new CALPO_Lineal();
-            openForm(showForm); //Muestra del formulario.
-
-            hideSubMenus();
             reset();
         }
 
@@ -107,22 +105,28 @@ namespace calc_polation_2022
 
         private void btn_usar_Click(object sender, EventArgs e)
         {
-            hideSubMenus();
-        }
-
-        private void btn_help_about_Click(object sender, EventArgs e)
-        {
             //System.Diagnostics.Process.Start("https://github.com/JohnyDeCoder/calc-polation");
 
             hideSubMenus();
         }
 
+        private void btn_help_about_Click(object sender, EventArgs e)
+        {
+            hideSubMenus();
+
+            Forms.CALPO_Inicio_Image showForm = new Forms.CALPO_Inicio_Image();
+            openForm(showForm); //Muestra del formulario.
+
+            Form CALPO_About = new CALPO_About();
+            CALPO_About.ShowDialog();
+
+            disableButtonActive();
+            btnBorderLeft.Visible = false;
+        }
+
         private void btn_repository_Click(object sender, EventArgs e)
         {
-            buttonActivate(sender);
-
-            CALPO_About showForm = new CALPO_About();
-            openForm(showForm); //Muestra del formulario
+            //System.Diagnostics.Process.Start("https://github.com/JohnyDeCoder/calc-polation");
 
             hideSubMenus();
         }
@@ -219,7 +223,8 @@ namespace calc_polation_2022
 
             btnBorderLeft.Visible = false;
 
-            Text = "CALPO: Inicio";
+            Forms.CALPO_Inicio_Image showForm = new Forms.CALPO_Inicio_Image();
+            openForm(showForm); //Muestra del formulario.
         }
         // FIN de Métodos.
     }

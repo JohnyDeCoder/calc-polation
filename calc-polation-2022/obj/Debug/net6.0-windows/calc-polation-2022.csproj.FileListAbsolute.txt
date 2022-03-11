@@ -25,3 +25,4 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Reposi
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.Properties.Resources.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.es-MX.resources
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.Forms.CALPO_Inicio_Image.resources
