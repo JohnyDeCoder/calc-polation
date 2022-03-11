@@ -63,9 +63,9 @@ namespace calc_polation_2022.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CALC_POLATION___Logo_Blanco {
+        internal static System.Drawing.Bitmap Logotipo_Alternative {
             get {
-                object obj = ResourceManager.GetObject("CALC_POLATION - Logo Blanco", resourceCulture);
+                object obj = ResourceManager.GetObject("Logotipo_Alternative", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace calc_polation_2022.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_Alternative {
+        internal static System.Drawing.Bitmap Logotipo_Center_Panel {
             get {
-                object obj = ResourceManager.GetObject("Logo Alternative", resourceCulture);
+                object obj = ResourceManager.GetObject("Logotipo_Center_Panel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace calc_polation_2022.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Logo_Center_Panel {
+        internal static System.Drawing.Bitmap Logotipo_Left_Panel {
             get {
-                object obj = ResourceManager.GetObject("Logo Center Panel", resourceCulture);
+                object obj = ResourceManager.GetObject("Logotipo_Left_Panel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

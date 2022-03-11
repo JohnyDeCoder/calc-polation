@@ -2,7 +2,7 @@ using FontAwesome.Sharp;
 
 namespace calc_polation_2022
 {
-    public partial class CALPO_Form : Form
+    public partial class CALPO_Inicio : Form
     {
         // Campos.
         private IconButton currentBtn;
@@ -10,7 +10,7 @@ namespace calc_polation_2022
 
         // Constructor.
 #pragma warning disable CS8618 // Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.
-        public CALPO_Form()
+        public CALPO_Inicio()
 #pragma warning restore CS8618 // Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.
         {
             InitializeComponent();
@@ -31,11 +31,9 @@ namespace calc_polation_2022
         private void picB_calpo_Click(object sender, EventArgs e)
         {
             CALPO_Lineal showForm = new CALPO_Lineal();
-            
-            
-                panel_form.Controls.RemoveAt(0);
-            
+            openForm(showForm); //Muestra del formulario.
 
+            hideSubMenus();
             reset();
         }
 
@@ -218,6 +216,8 @@ namespace calc_polation_2022
         {
             hideSubMenus();
             disableButtonActive();
+
+            btnBorderLeft.Visible = false;
 
             Text = "CALPO: Inicio";
         }

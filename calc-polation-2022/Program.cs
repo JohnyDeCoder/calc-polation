@@ -11,7 +11,7 @@ namespace calc_polation_2022
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new CALPO_Form());
+            Application.Run(new CALPO_Inicio());
         }
     }
 }
