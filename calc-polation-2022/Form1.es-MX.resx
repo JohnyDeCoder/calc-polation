@@ -66,7 +66,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btn_repository.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
+    <value>Cambria, 11.25pt</value>
   </data>
   <data name="btn_repository.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -101,7 +101,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_exit.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
+    <value>Cambria, 11.25pt</value>
   </data>
   <data name="btn_exit.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -134,16 +134,13 @@
     <value>Flat</value>
   </data>
   <data name="btn_help_about.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
-  </data>
-  <data name="btn_help_about.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+    <value>Cambria, 11.25pt, style=Italic</value>
   </data>
   <data name="btn_help_about.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_help_about.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>50, 0, 20, 0</value>
+    <value>20, 0, 20, 0</value>
   </data>
   <data name="btn_help_about.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 41</value>
@@ -164,16 +161,13 @@
     <value>Flat</value>
   </data>
   <data name="btn_usar.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
-  </data>
-  <data name="btn_usar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+    <value>Cambria, 11.25pt, style=Italic</value>
   </data>
   <data name="btn_usar.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_usar.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>50, 0, 20, 0</value>
+    <value>20, 0, 20, 0</value>
   </data>
   <data name="btn_usar.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 40</value>
@@ -206,7 +200,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_help.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
+    <value>Cambria, 11.25pt</value>
   </data>
   <data name="btn_help.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -239,7 +233,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_lagrange.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
+    <value>Cambria, 11.25pt</value>
   </data>
   <data name="btn_lagrange.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -272,16 +266,13 @@
     <value>Flat</value>
   </data>
   <data name="btn_inter_cuadratica.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
-  </data>
-  <data name="btn_inter_cuadratica.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+    <value>Cambria, 11.25pt, style=Italic</value>
   </data>
   <data name="btn_inter_cuadratica.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_inter_cuadratica.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>50, 0, 20, 0</value>
+    <value>20, 0, 20, 0</value>
   </data>
   <data name="btn_inter_cuadratica.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 41</value>
@@ -302,16 +293,13 @@
     <value>Flat</value>
   </data>
   <data name="btn_inter_lineal.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
-  </data>
-  <data name="btn_inter_lineal.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+    <value>Cambria, 11.25pt, style=Italic</value>
   </data>
   <data name="btn_inter_lineal.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="btn_inter_lineal.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>50, 0, 20, 0</value>
+    <value>20, 0, 20, 0</value>
   </data>
   <data name="btn_inter_lineal.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 40</value>
@@ -344,7 +332,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_interpolacion.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Arial, 9pt</value>
+    <value>Cambria, 11.25pt</value>
   </data>
   <data name="btn_interpolacion.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -370,6 +358,15 @@
   <data name="btn_interpolacion.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
     <value>ImageBeforeText</value>
   </data>
+  <data name="picB_calpo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="picB_calpo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 100</value>
+  </data>
+  <data name="picB_calpo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
   <data name="panel_logo.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
   </data>
@@ -393,9 +390,6 @@
   </data>
   <data name="panel_form.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>934, 561</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>

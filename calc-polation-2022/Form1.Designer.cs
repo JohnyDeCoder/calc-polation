@@ -44,10 +44,13 @@ namespace calc_polation_2022
             this.btn_inter_lineal = new FontAwesome.Sharp.IconButton();
             this.btn_interpolacion = new FontAwesome.Sharp.IconButton();
             this.panel_logo = new System.Windows.Forms.Panel();
+            this.picB_calpo = new System.Windows.Forms.PictureBox();
             this.panel_form = new System.Windows.Forms.Panel();
             this.panel_lateral.SuspendLayout();
             this.panel_sub_help.SuspendLayout();
             this.panel_sub_interpolacion.SuspendLayout();
+            this.panel_logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picB_calpo)).BeginInit();
             this.SuspendLayout();
             // 
             // panel_lateral
@@ -200,7 +203,16 @@ namespace calc_polation_2022
             // panel_logo
             // 
             resources.ApplyResources(this.panel_logo, "panel_logo");
+            this.panel_logo.Controls.Add(this.picB_calpo);
             this.panel_logo.Name = "panel_logo";
+            // 
+            // picB_calpo
+            // 
+            resources.ApplyResources(this.picB_calpo, "picB_calpo");
+            this.picB_calpo.Image = global::calc_polation_2022.Properties.Resources.CALC_POLATION___Logo_Blanco;
+            this.picB_calpo.Name = "picB_calpo";
+            this.picB_calpo.TabStop = false;
+            this.picB_calpo.Click += new System.EventHandler(this.picB_calpo_Click);
             // 
             // panel_form
             // 
@@ -220,6 +232,8 @@ namespace calc_polation_2022
             this.panel_lateral.ResumeLayout(false);
             this.panel_sub_help.ResumeLayout(false);
             this.panel_sub_interpolacion.ResumeLayout(false);
+            this.panel_logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picB_calpo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -240,5 +254,6 @@ namespace calc_polation_2022
         private FontAwesome.Sharp.IconButton btn_usar;
         private FontAwesome.Sharp.IconButton btn_exit;
         private IconButton btn_repository;
+        private PictureBox picB_calpo;
     }
 }

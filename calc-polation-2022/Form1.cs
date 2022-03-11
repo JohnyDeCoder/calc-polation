@@ -9,7 +9,9 @@ namespace calc_polation_2022
         private Panel btnBorderLeft;
 
         // Constructor.
+#pragma warning disable CS8618 // Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.
         public CALPO_Form()
+#pragma warning restore CS8618 // Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.
         {
             InitializeComponent();
 
@@ -25,6 +27,17 @@ namespace calc_polation_2022
         }
 
         // INICIO de botones y componentes.
+
+        private void picB_calpo_Click(object sender, EventArgs e)
+        {
+            CALPO_Lineal showForm = new CALPO_Lineal();
+            
+            
+                panel_form.Controls.RemoveAt(0);
+            
+
+            reset();
+        }
 
         private void btn_interpolacion_Click(object sender, EventArgs e)
         {
@@ -101,8 +114,7 @@ namespace calc_polation_2022
 
         private void btn_help_about_Click(object sender, EventArgs e)
         {
-            CALPO_About showForm = new CALPO_About();
-            openForm(showForm); //Muestra del formulario
+            //System.Diagnostics.Process.Start("https://github.com/JohnyDeCoder/calc-polation");
 
             hideSubMenus();
         }
@@ -126,7 +138,7 @@ namespace calc_polation_2022
         // INICIO de Métodos.
         private void openForm(Form showForm)
         {
-            this.Text = showForm.Text;
+            Text = showForm.Text;
             // Abrir un formulario dentro de un panel.
             if (panel_form.Controls.Count > 0) // Sí, existe algún elemento en el panel.
             {
@@ -200,6 +212,14 @@ namespace calc_polation_2022
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleLeft;
             }
+        }
+
+        private void reset()
+        {
+            hideSubMenus();
+            disableButtonActive();
+
+            Text = "CALPO: Inicio";
         }
         // FIN de Métodos.
     }
