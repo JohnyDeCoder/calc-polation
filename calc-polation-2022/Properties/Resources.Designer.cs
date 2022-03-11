@@ -63,6 +63,36 @@ namespace calc_polation_2022.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BrandonMoran11_Avatar_GitHub_2022 {
+            get {
+                object obj = ResourceManager.GetObject("BrandonMoran11_Avatar_GitHub_2022", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap flag_mexico_icon {
+            get {
+                object obj = ResourceManager.GetObject("flag_mexico_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JohnyDeCoder_Avatar_GitHub_2022 {
+            get {
+                object obj = ResourceManager.GetObject("JohnyDeCoder_Avatar_GitHub_2022", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logotipo_Alternative {
             get {
                 object obj = ResourceManager.GetObject("Logotipo_Alternative", resourceCulture);
@@ -86,6 +116,16 @@ namespace calc_polation_2022.Properties {
         internal static System.Drawing.Bitmap Logotipo_Left_Panel {
             get {
                 object obj = ResourceManager.GetObject("Logotipo_Left_Panel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap udec_logo {
+            get {
+                object obj = ResourceManager.GetObject("udec_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
