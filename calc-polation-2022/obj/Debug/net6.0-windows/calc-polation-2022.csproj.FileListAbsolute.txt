@@ -16,8 +16,6 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Reposi
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.genruntimeconfig.cache
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\es-MX\calc-polation-2022.resources.dll
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\es-MX\calc-polation-2022.resources.dll
-D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Form.resources
-D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Form.es-MX.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_About.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Cuadratica.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Lagrange.resources
@@ -25,3 +23,5 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Reposi
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.csproj.CopyComplete
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.Properties.Resources.resources
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.resources
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.es-MX.resources

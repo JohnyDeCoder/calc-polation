@@ -2,7 +2,7 @@
 
 namespace calc_polation_2022
 {
-    partial class CALPO_Form
+    partial class CALPO_Inicio
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,7 +30,7 @@ namespace calc_polation_2022
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CALPO_Form));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CALPO_Inicio));
             this.panel_lateral = new System.Windows.Forms.Panel();
             this.btn_repository = new FontAwesome.Sharp.IconButton();
             this.btn_exit = new FontAwesome.Sharp.IconButton();
@@ -209,7 +209,7 @@ namespace calc_polation_2022
             // picB_calpo
             // 
             resources.ApplyResources(this.picB_calpo, "picB_calpo");
-            this.picB_calpo.Image = global::calc_polation_2022.Properties.Resources.CALC_POLATION___Logo_Blanco;
+            this.picB_calpo.Image = global::calc_polation_2022.Properties.Resources.Logotipo_Left_Panel;
             this.picB_calpo.Name = "picB_calpo";
             this.picB_calpo.TabStop = false;
             this.picB_calpo.Click += new System.EventHandler(this.picB_calpo_Click);
@@ -219,7 +219,7 @@ namespace calc_polation_2022
             resources.ApplyResources(this.panel_form, "panel_form");
             this.panel_form.Name = "panel_form";
             // 
-            // CALPO_Form
+            // CALPO_Inicio
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,7 +227,7 @@ namespace calc_polation_2022
             this.Controls.Add(this.panel_lateral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "CALPO_Form";
+            this.Name = "CALPO_Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.panel_lateral.ResumeLayout(false);
             this.panel_sub_help.ResumeLayout(false);
