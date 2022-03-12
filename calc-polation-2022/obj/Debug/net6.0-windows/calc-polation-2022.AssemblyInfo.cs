@@ -11,13 +11,15 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("calc-polation-2022")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("JohnyDeCoder, BrandonMoran11")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyDescriptionAttribute("Una calculadora para interpolación lineal, cuadrática y polinomios de Lagrange.")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0-beta")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0-beta")]
 [assembly: System.Reflection.AssemblyProductAttribute("calc-polation-2022")]
 [assembly: System.Reflection.AssemblyTitleAttribute("calc-polation-2022")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/JohnyDeCoder/calc-polation")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
 [assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 

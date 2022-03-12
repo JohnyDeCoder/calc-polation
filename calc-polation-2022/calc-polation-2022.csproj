@@ -7,7 +7,39 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyVersion>1.0.0</AssemblyVersion>
+    <FileVersion>1.0.0-beta</FileVersion>
+    <StartupObject>calc_polation_2022.Program</StartupObject>
+    <ApplicationIcon>calpo_ico.ico</ApplicationIcon>
+    <SignAssembly>False</SignAssembly>
+    <Version>1.0.0-beta</Version>
+    <Authors>JohnyDeCoder, BrandonMoran11</Authors>
+    <Description>Una calculadora para interpolación lineal, cuadrática y polinomios de Lagrange.</Description>
+    <PackageIcon>calpo_ico.png</PackageIcon>
+    <RepositoryUrl>https://github.com/JohnyDeCoder/calc-polation</RepositoryUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>D:\Descargas\LICENSE</PackageLicenseFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="calpo_ico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\..\Descargas\calpo_ico.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Font.Awesome" Version="5.15.4" />
@@ -27,10 +59,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>
