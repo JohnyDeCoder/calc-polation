@@ -1,0 +1,15 @@
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc-polation-2022.csproj.AssemblyReference.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc-polation-2022.csproj.SuggestedBindingRedirects.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Forms.CALPO_About.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Forms.CALPO_Cuadratica.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Forms.CALPO_Inicio.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Forms.CALPO_Inicio_Image.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Forms.CALPO_Lagrange.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Forms.CALPO_Lineal.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Properties.Resources.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc_polation_2022.Forms.CALPO_Inicio.es-MX.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc-polation-2022.csproj.GenerateResource.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc-polation-2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc-polation-2022.AssemblyInfoInputs.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc-polation-2022.AssemblyInfo.cs
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net48\calc-polation-2022.csproj.CoreCompileInputs.cache
