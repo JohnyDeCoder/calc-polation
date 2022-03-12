@@ -705,11 +705,13 @@ namespace calc_polation_2022
         }
         private void txt_x2_KeyPress(object sender, KeyPressEventArgs e)
         {
+            // X2
             onlyNumbers(sender, e);
         }
 
         private void txt_y2_KeyPress(object sender, KeyPressEventArgs e)
         {
+            // f(X2) o y2
             onlyNumbers(sender, e);
         }
 
