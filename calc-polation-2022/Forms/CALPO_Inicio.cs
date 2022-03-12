@@ -117,7 +117,7 @@ namespace calc_polation_2022
             // ProcessStartInfo.UseShellExecute Property
             using (Process compiler = new Process())
             {
-                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation/how-to";
+                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation#lineal-y-cuadr%C3%A1tica";
                 //compiler.StartInfo.Arguments = "/r:System.dll /out:sample.exe stdstr.cs";
                 compiler.StartInfo.UseShellExecute = true;
                 //compiler.StartInfo.RedirectStandardOutput = true;
@@ -144,7 +144,7 @@ namespace calc_polation_2022
             // ProcessStartInfo.UseShellExecute Property
             using (Process compiler = new Process())
             {
-                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation";
+                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation/tags";
                 //compiler.StartInfo.Arguments = "/r:System.dll /out:sample.exe stdstr.cs";
                 compiler.StartInfo.UseShellExecute = true;
                 //compiler.StartInfo.RedirectStandardOutput = true;
@@ -202,8 +202,12 @@ namespace calc_polation_2022
                 currentBtn.TextImageRelation = TextImageRelation.ImageBeforeText;
                 currentBtn.ImageAlign = ContentAlignment.MiddleRight;
 
+                // Generador de números aleatorios.
+                int randColor1 = new Random().Next(0, 255);
+                int randColor2 = new Random().Next(0, 255);
+                int randColor3 = new Random().Next(0, 255);
                 // Borde del botón latreral.
-                btnBorderLeft.BackColor = Color.FromArgb(212, 172, 13); // Background color lateral button.
+                btnBorderLeft.BackColor = Color.FromArgb(randColor1, randColor2, randColor3); // Background color lateral button.
                 if (currentBtn == btn_interpolacion)
                 {
                     btnBorderLeft.Location = new Point(0, 100);

@@ -26,3 +26,31 @@ D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Reposi
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.es-MX.resources
 D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\Repositorios de GitHub\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.Forms.CALPO_Inicio_Image.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.csproj.AssemblyReference.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_About.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Cuadratica.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.Forms.CALPO_Inicio_Image.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Lagrange.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Lineal.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.Properties.Resources.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc_polation_2022.CALPO_Inicio.es-MX.resources
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.csproj.GenerateResource.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.AssemblyInfoInputs.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.AssemblyInfo.cs
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.csproj.CoreCompileInputs.cache
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.dll
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\ref\calc-polation-2022.dll
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.pdb
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\calc-polation-2022.exe
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\calc-polation-2022.deps.json
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\calc-polation-2022.runtimeconfig.json
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\calc-polation-2022.dll
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\ref\calc-polation-2022.dll
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\calc-polation-2022.pdb
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\es-MX\calc-polation-2022.resources.dll
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows\FontAwesome.Sharp.dll
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\es-MX\calc-polation-2022.resources.dll
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.csproj.CopyComplete
+C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows\calc-polation-2022.genruntimeconfig.cache

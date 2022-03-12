@@ -104,11 +104,11 @@
   "project": {
     "version": "1.0.0-beta",
     "restore": {
-      "projectUniqueName": "D:\\Documentos\\Proyectos individuales\\Programación\\Sistemas tradicionales\\Repositorios de GitHub\\calc-polation\\calc-polation-2022\\calc-polation-2022.csproj",
+      "projectUniqueName": "C:\\Users\\johny\\source\\repos\\JohnyDeCoder\\calc-polation\\calc-polation-2022\\calc-polation-2022.csproj",
       "projectName": "calc-polation-2022",
-      "projectPath": "D:\\Documentos\\Proyectos individuales\\Programación\\Sistemas tradicionales\\Repositorios de GitHub\\calc-polation\\calc-polation-2022\\calc-polation-2022.csproj",
+      "projectPath": "C:\\Users\\johny\\source\\repos\\JohnyDeCoder\\calc-polation\\calc-polation-2022\\calc-polation-2022.csproj",
       "packagesPath": "C:\\Users\\johny\\.nuget\\packages\\",
-      "outputPath": "D:\\Documentos\\Proyectos individuales\\Programación\\Sistemas tradicionales\\Repositorios de GitHub\\calc-polation\\calc-polation-2022\\obj\\",
+      "outputPath": "C:\\Users\\johny\\source\\repos\\JohnyDeCoder\\calc-polation\\calc-polation-2022\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\johny\\AppData\\Roaming\\NuGet\\NuGet.Config",
