@@ -1,7 +1,7 @@
 # CALC-POLATION ₂₀₂₂
 
 _Una calculadora de interpolación lineal, cuadrática y Polinomios de Lagrange._
-![Image text](https://github.com/JohnyDeCoder/calc-polation/blob/main/calc-polation-2022/Resources/Logotipo%20Alternative.png)
+![Image text](https://i.ibb.co/rZxm09P/Logotipo-Alternative.png)
 ## Comenzando
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
@@ -15,6 +15,10 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 _Se utilizó la siguiente herramienta para el desarrollo del proyecto:_
 
 * [FontAwesome.Sharp v5.15.4](http://www.dropwizard.io/1.0.2/docs/) - Usado para estilos de botones con iconos.
+
+## Contribuyendo
+
+_Se utilizó [LiveShare](https://visualstudio.microsoft.com/es/services/live-share/) por parte de ambos desarolladores para el desarrollo de la aplicación._
 
 ## Cómo usar
 ### Panel
@@ -108,7 +112,7 @@ _¡Les damos las gracias por el apoyo recibido!_
 
 ## Licencia
 
-Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el archivo [LICENSE.md](LICENSE.md) para más detalles.
+Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el archivo [LICENSE](https://github.com/JohnyDeCoder/calc-polation/blob/master/LICENSE) para más detalles.
 
 ## Expresiones de Gratitud
 
