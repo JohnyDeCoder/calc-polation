@@ -8,7 +8,8 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### Pre-requisitos
 
-* Para ejecutar correctamente la aplicación deberás tener instalado el SDK [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) _(indispensable)_ dependiendo de tu arquitectura.
+* Para ejecutar correctamente la aplicación deberás tener instalado [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0/runtime) _(indispensable)_
+* Para usarios que quieran usar la aplicación deben dirigirse al apartado **Run desktop apps** y descargar el framework dependiendo de la arquitectura de tu sistema.
 
 ## Construido con
 
