@@ -1,4 +1,5 @@
 using FontAwesome.Sharp;
+using System.Diagnostics;
 
 namespace calc_polation_2022
 {
@@ -105,9 +106,23 @@ namespace calc_polation_2022
 
         private void btn_usar_Click(object sender, EventArgs e)
         {
-            //System.Diagnostics.Process.Start("https://github.com/JohnyDeCoder/calc-polation");
-
             hideSubMenus();
+
+            Forms.CALPO_Inicio_Image showForm = new Forms.CALPO_Inicio_Image();
+            openForm(showForm); //Muestra del formulario.
+
+            disableButtonActive();
+            btnBorderLeft.Visible = false;
+
+            // ProcessStartInfo.UseShellExecute Property
+            using (Process compiler = new Process())
+            {
+                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation/how-to";
+                //compiler.StartInfo.Arguments = "/r:System.dll /out:sample.exe stdstr.cs";
+                compiler.StartInfo.UseShellExecute = true;
+                //compiler.StartInfo.RedirectStandardOutput = true;
+                compiler.Start();
+            }
         }
 
         private void btn_help_about_Click(object sender, EventArgs e)
@@ -126,7 +141,15 @@ namespace calc_polation_2022
 
         private void btn_repository_Click(object sender, EventArgs e)
         {
-            //System.Diagnostics.Process.Start("https://github.com/JohnyDeCoder/calc-polation");
+            // ProcessStartInfo.UseShellExecute Property
+            using (Process compiler = new Process())
+            {
+                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation";
+                //compiler.StartInfo.Arguments = "/r:System.dll /out:sample.exe stdstr.cs";
+                compiler.StartInfo.UseShellExecute = true;
+                //compiler.StartInfo.RedirectStandardOutput = true;
+                compiler.Start();
+            }
 
             hideSubMenus();
         }
