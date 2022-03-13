@@ -54,6 +54,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lbl_github_profiles = new System.Windows.Forms.Label();
             this.lbl_msg = new System.Windows.Forms.Label();
+            this.lbl_version = new System.Windows.Forms.Label();
             this.panel_programmer_1.SuspendLayout();
             this.panel_dates_1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picB_mex_ico1)).BeginInit();
@@ -336,11 +337,22 @@
     " usado para \r\nfines académicos.\"";
             this.lbl_msg.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // lbl_version
+            // 
+            this.lbl_version.AutoSize = true;
+            this.lbl_version.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.lbl_version.Location = new System.Drawing.Point(287, 614);
+            this.lbl_version.Name = "lbl_version";
+            this.lbl_version.Size = new System.Drawing.Size(78, 17);
+            this.lbl_version.TabIndex = 7;
+            this.lbl_version.Text = "v1.0.0-beta";
+            // 
             // CALPO_About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 631);
+            this.Controls.Add(this.lbl_version);
             this.Controls.Add(this.lbl_msg);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel_programmer_2);
@@ -399,5 +411,6 @@
         private PictureBox picB_github_ico2;
         private PictureBox picB_github_ico1;
         private Label lbl_msg;
+        private Label lbl_version;
     }
 }
