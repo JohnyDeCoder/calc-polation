@@ -1311,7 +1311,8 @@ namespace calc_polation_2022
             {
                 // Si encuentra un TextBox con únicamente un - o punto o ambos juntos.
                 if (oControls is TextBox & oControls.Text == "-" || oControls.Text == "." ||
-                    oControls.Text.Contains("-.") || oControls.Text.Contains(".-"))
+                    oControls.Text.Contains("-.") || oControls.Text.Contains(".-") ||
+                    oControls.Text.EndsWith("-"))
                 {
                     txtContains = true;
                 }
