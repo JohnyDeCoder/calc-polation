@@ -278,7 +278,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result.ToString() == "NaN") // Si hay algún error matemático.
+                        if (result.ToString() == "NaN" || result.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -357,7 +357,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result.ToString() == "NaN") // Si hay algún error matemático.
+                        if (result.ToString() == "NaN" || result.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -436,7 +436,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result.ToString() == "NaN") // Si hay algún error matemático.
+                        if (result.ToString() == "NaN" || result.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -626,7 +626,8 @@ namespace calc_polation_2022
             {
                 // Si encuentra un TextBox con únicamente un - o punto o ambos juntos.
                 if (oControls is TextBox & oControls.Text == "-" || oControls.Text == "." || 
-                    oControls.Text.Contains("-.") || oControls.Text.Contains(".-"))
+                    oControls.Text.Contains("-.") || oControls.Text.Contains(".-") || 
+                    oControls.Text.EndsWith("-"))
                 {
                     txtContains = true;
                 }
