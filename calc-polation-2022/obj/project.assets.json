@@ -102,7 +102,7 @@
     "C:\\Users\\johny\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0-beta",
+    "version": "1.1.0-beta",
     "restore": {
       "projectUniqueName": "C:\\Users\\johny\\source\\repos\\JohnyDeCoder\\calc-polation\\calc-polation-2022\\calc-polation-2022.csproj",
       "projectName": "calc-polation",

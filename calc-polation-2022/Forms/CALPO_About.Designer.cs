@@ -345,7 +345,7 @@
             this.lbl_version.Name = "lbl_version";
             this.lbl_version.Size = new System.Drawing.Size(78, 17);
             this.lbl_version.TabIndex = 7;
-            this.lbl_version.Text = "v1.0.0-beta";
+            this.lbl_version.Text = "v1.1.0-beta";
             // 
             // CALPO_About
             // 

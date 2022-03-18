@@ -2,7 +2,6 @@ C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\De
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows10.0.22000.0\calc-polation.deps.json
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows10.0.22000.0\calc-polation.runtimeconfig.json
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows10.0.22000.0\calc-polation.dll
-C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows10.0.22000.0\calc-polation.pdb
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows10.0.22000.0\es-MX\calc-polation.resources.dll
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows10.0.22000.0\FontAwesome.Sharp.dll
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\bin\Debug\net6.0-windows10.0.22000.0\Microsoft.Windows.SDK.NET.dll
@@ -25,6 +24,5 @@ C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\De
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows10.0.22000.0\calc-polation-2022.csproj.CopyComplete
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows10.0.22000.0\calc-polation.dll
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows10.0.22000.0\ref\calc-polation.dll
-C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows10.0.22000.0\calc-polation.pdb
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows10.0.22000.0\calc-polation-2022.genruntimeconfig.cache
 C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\obj\Debug\net6.0-windows10.0.22000.0\refint\calc-polation.dll

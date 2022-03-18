@@ -88,7 +88,7 @@ namespace calc_polation_2022
             this.btn_repository.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.btn_repository.Size = new System.Drawing.Size(180, 45);
             this.btn_repository.TabIndex = 4;
-            this.btn_repository.Text = "Repositorio";
+            this.btn_repository.Text = "Lanzamientos";
             this.btn_repository.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_repository.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_repository.UseVisualStyleBackColor = true;

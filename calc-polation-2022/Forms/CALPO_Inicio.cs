@@ -117,7 +117,7 @@ namespace calc_polation_2022
             // ProcessStartInfo.UseShellExecute Property
             using (Process compiler = new Process())
             {
-                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation#lineal-y-cuadr%C3%A1tica";
+                compiler.StartInfo.FileName = "https://github.com/JohnyDeCoder/calc-polation#cómo-usar";
                 //compiler.StartInfo.Arguments = "/r:System.dll /out:sample.exe stdstr.cs";
                 compiler.StartInfo.UseShellExecute = true;
                 //compiler.StartInfo.RedirectStandardOutput = true;

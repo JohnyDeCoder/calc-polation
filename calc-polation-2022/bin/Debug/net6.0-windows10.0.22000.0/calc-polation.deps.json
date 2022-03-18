@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "calc-polation/1.0.0-beta": {
+      "calc-polation/1.1.0-beta": {
         "dependencies": {
           "Font.Awesome": "5.15.4",
           "FontAwesome.Sharp": "5.15.4",
@@ -45,7 +45,7 @@
     }
   },
   "libraries": {
-    "calc-polation/1.0.0-beta": {
+    "calc-polation/1.1.0-beta": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
