@@ -55,6 +55,8 @@
             this.rb_noRedondeo = new System.Windows.Forms.RadioButton();
             this.btn_reset = new FontAwesome.Sharp.IconButton();
             this.btn_calculate = new FontAwesome.Sharp.IconButton();
+            this.lbl_va = new System.Windows.Forms.Label();
+            this.lbl_vv = new System.Windows.Forms.Label();
             this.gb_results.SuspendLayout();
             this.gb_values.SuspendLayout();
             this.gb_options.SuspendLayout();
@@ -98,6 +100,8 @@
             // 
             // gb_values
             // 
+            this.gb_values.Controls.Add(this.lbl_va);
+            this.gb_values.Controls.Add(this.lbl_vv);
             this.gb_values.Controls.Add(this.txt_y2);
             this.gb_values.Controls.Add(this.txt_x2);
             this.gb_values.Controls.Add(this.lbl_y2);
@@ -428,6 +432,28 @@
             this.btn_calculate.UseVisualStyleBackColor = true;
             this.btn_calculate.Click += new System.EventHandler(this.btn_calculate_Click);
             // 
+            // lbl_va
+            // 
+            this.lbl_va.AutoSize = true;
+            this.lbl_va.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_va.Location = new System.Drawing.Point(430, 10);
+            this.lbl_va.Name = "lbl_va";
+            this.lbl_va.Size = new System.Drawing.Size(132, 15);
+            this.lbl_va.TabIndex = 18;
+            this.lbl_va.Text = "VALOR APROXIMADO";
+            this.lbl_va.Visible = false;
+            // 
+            // lbl_vv
+            // 
+            this.lbl_vv.AutoSize = true;
+            this.lbl_vv.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_vv.Location = new System.Drawing.Point(64, 10);
+            this.lbl_vv.Name = "lbl_vv";
+            this.lbl_vv.Size = new System.Drawing.Size(121, 15);
+            this.lbl_vv.TabIndex = 17;
+            this.lbl_vv.Text = "VALOR VERDADERO";
+            this.lbl_vv.Visible = false;
+            // 
             // CALPO_Cuadratica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -481,5 +507,7 @@
         private TextBox txt_x2;
         private Label lbl_y2;
         private Label lbl_x2;
+        private Label lbl_va;
+        private Label lbl_vv;
     }
 }
