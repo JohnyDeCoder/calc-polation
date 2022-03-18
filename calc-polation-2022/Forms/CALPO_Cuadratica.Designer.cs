@@ -67,7 +67,7 @@
             this.gb_results.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gb_results.Location = new System.Drawing.Point(169, 11);
             this.gb_results.Name = "gb_results";
-            this.gb_results.Size = new System.Drawing.Size(573, 324);
+            this.gb_results.Size = new System.Drawing.Size(573, 340);
             this.gb_results.TabIndex = 6;
             this.gb_results.TabStop = false;
             this.gb_results.Text = "Resultados";
@@ -82,7 +82,7 @@
             this.lbox_results.Items.AddRange(new object[] {
             "FÓRMULA DE LA INTERPOLACIÓN CUADRÁTICA",
             "",
-            "• f(x) = b₀ + b₁ (x - x₀) + b2 (x - x₀) (x - x₁)",
+            "• f(x) = b₀ + b₁ (x - x₀) + b₂ (x - x₀) (x - x₁)",
             "",
             "donde...",
             "",
@@ -92,7 +92,7 @@
             this.lbox_results.Location = new System.Drawing.Point(11, 22);
             this.lbox_results.Name = "lbox_results";
             this.lbox_results.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.lbox_results.Size = new System.Drawing.Size(551, 286);
+            this.lbox_results.Size = new System.Drawing.Size(551, 308);
             this.lbox_results.TabIndex = 4;
             this.lbox_results.TabStop = false;
             // 
@@ -115,11 +115,11 @@
             this.gb_values.Controls.Add(this.txt_x);
             this.gb_values.Controls.Add(this.lbl_x);
             this.gb_values.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_values.Location = new System.Drawing.Point(12, 341);
+            this.gb_values.Location = new System.Drawing.Point(12, 351);
             this.gb_values.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_values.Name = "gb_values";
             this.gb_values.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gb_values.Size = new System.Drawing.Size(729, 254);
+            this.gb_values.Size = new System.Drawing.Size(729, 251);
             this.gb_values.TabIndex = 5;
             this.gb_values.TabStop = false;
             this.gb_values.Text = "Valores";
@@ -328,7 +328,7 @@
             this.gb_options.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_options.Name = "gb_options";
             this.gb_options.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gb_options.Size = new System.Drawing.Size(150, 324);
+            this.gb_options.Size = new System.Drawing.Size(150, 340);
             this.gb_options.TabIndex = 4;
             this.gb_options.TabStop = false;
             this.gb_options.Text = "Opciones";
@@ -337,7 +337,7 @@
             // 
             this.cb_calculate_percent.AutoSize = true;
             this.cb_calculate_percent.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cb_calculate_percent.Location = new System.Drawing.Point(9, 170);
+            this.cb_calculate_percent.Location = new System.Drawing.Point(6, 177);
             this.cb_calculate_percent.Name = "cb_calculate_percent";
             this.cb_calculate_percent.Size = new System.Drawing.Size(126, 34);
             this.cb_calculate_percent.TabIndex = 7;
@@ -351,7 +351,7 @@
             this.gb_results_type.Controls.Add(this.rb_redondeo);
             this.gb_results_type.Controls.Add(this.rb_noRedondeo);
             this.gb_results_type.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_results_type.Location = new System.Drawing.Point(6, 210);
+            this.gb_results_type.Location = new System.Drawing.Point(6, 226);
             this.gb_results_type.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_results_type.Name = "gb_results_type";
             this.gb_results_type.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -433,7 +433,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(754, 602);
+            this.ClientSize = new System.Drawing.Size(754, 614);
             this.Controls.Add(this.gb_results);
             this.Controls.Add(this.gb_values);
             this.Controls.Add(this.gb_options);

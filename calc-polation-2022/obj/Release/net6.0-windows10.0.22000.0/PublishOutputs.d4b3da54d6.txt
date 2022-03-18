@@ -1,0 +1,9 @@
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\calc-polation.exe
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\calc-polation.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\calc-polation.deps.json
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\calc-polation.runtimeconfig.json
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\calc-polation.pdb
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\es-MX\calc-polation.resources.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\Microsoft.Windows.SDK.NET.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\WinRT.Runtime.dll
+D:\Documentos\Proyectos individuales\Programación\Sistemas tradicionales\C#\GitHub\calc-polation\release_1.0.0-beta\FontAwesome.Sharp.dll
