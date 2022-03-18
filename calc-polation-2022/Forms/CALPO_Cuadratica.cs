@@ -41,21 +41,21 @@ namespace calc_polation_2022
 
             double part1, part2, part3, result, b0, b1, b2, percent1, percent2, result_percent; // Variables.
 
-            if (txtEmpty == true || txtContains == true) // Si hay algún TextBox vacío o únicamenmte con - o punto.
+            if (cb_calculate_percent.Checked == true) // ---- CheckBox.Checked = True ----
             {
-                MessageBox.Show(
-                    "No se admiten campos vacíos o sin dígitos, por favor rellene los campos faltantes con valores válidos para calcular.",
-                    "Advertencia",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                    );
+                if (txtEmpty == true || txtContains == true) // Si hay algún TextBox vacío o únicamenmte con - o punto.
+                {
+                    MessageBox.Show(
+                        "No se admiten campos vacíos o sin dígitos, por favor rellene los campos faltantes con valores válidos para calcular.",
+                        "Advertencia",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                        );
 
-                txtEmpty = false; // Se reinicia la variable si ya se había encontrado un TextBox vacío.
-                txtContains = false; // Se reinicia la variable si ya se había encontrado un TextBox con - o punto.
-            }
-            else
-            {
-                if (cb_calculate_percent.Checked == true) // ---- CheckBox.Checked = True ----
+                    txtEmpty = false; // Se reinicia la variable si ya se había encontrado un TextBox vacío.
+                    txtContains = false; // Se reinicia la variable si ya se había encontrado un TextBox con - o punto.
+                }
+                else
                 {
                     if (rb_noRedondeo.Checked == true)
                     {
@@ -79,7 +79,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
+                        if (result_percent.ToString() == "NaN" || result_percent.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -98,10 +98,7 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                            lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
+                            templateETP(); // Plantilla error relativo porcentual.
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
@@ -116,10 +113,11 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add(
-                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
+                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el ERROR verdadero " +
+                                "entre el VALOR verdadero y se multiplica por el 100%."
                                 );
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
+                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + " * 100%" + igual + result_percent);
                         }
                     }
                     else if (rb_redondeo.Checked == true)
@@ -145,7 +143,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
+                        if (result_percent.ToString() == "NaN" || result_percent.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -164,10 +162,7 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                            lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
+                            templateETP(); // Plantilla error relativo porcentual.
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
@@ -182,10 +177,11 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add(
-                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
+                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el ERROR verdadero " +
+                                "entre el VALOR verdadero y se multiplica por el 100%."
                                 );
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
+                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + " * 100%" + igual + result_percent);
                         }
                     }
                     else // Últimos 4 decimales.
@@ -211,7 +207,7 @@ namespace calc_polation_2022
                             throw;
                         }
 
-                        if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
+                        if (result_percent.ToString() == "NaN" || result_percent.ToString().Contains('∞')) // Si hay algún error matemático.
                         {
                             MessageBox.Show(
                             "No se puede dividir un número entre 0.",
@@ -230,10 +226,7 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                            lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
+                            templateETP(); // Plantilla error relativo porcentual.
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
@@ -248,12 +241,28 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add(
-                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
+                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el ERROR verdadero " +
+                                "entre el VALOR verdadero y se multiplica por el 100%."
                                 );
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
+                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + " * 100%" + igual + result_percent);
                         }
                     }
+                }
+            }
+            else
+            {
+                if (txtEmpty == true || txtContains == true) // Si hay algún TextBox vacío o únicamenmte con - o punto.
+                {
+                    MessageBox.Show(
+                        "No se admiten campos vacíos o sin dígitos, por favor rellene los campos faltantes con valores válidos para calcular.",
+                        "Advertencia",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                        );
+
+                    txtEmpty = false; // Se reinicia la variable si ya se había encontrado un TextBox vacío.
+                    txtContains = false; // Se reinicia la variable si ya se había encontrado un TextBox con - o punto.
                 }
                 else // ---- CheckBox.Checked = False ----
                 {
@@ -264,8 +273,8 @@ namespace calc_polation_2022
                             // Operaciones.
                             b0 = double.Parse(txt_y0.Text);
                             b1 = (double.Parse(txt_y1.Text) - b0) / (double.Parse(txt_x1.Text) - double.Parse(txt_x0.Text));
-                            b2 = (((double.Parse(txt_y2.Text) - double.Parse(txt_y1.Text)) / (double.Parse(txt_x2.Text) - 
-                                double.Parse(txt_x1.Text))) - (double.Parse(txt_y1.Text) - b0) / (double.Parse(txt_x1.Text) - 
+                            b2 = (((double.Parse(txt_y2.Text) - double.Parse(txt_y1.Text)) / (double.Parse(txt_x2.Text) -
+                                double.Parse(txt_x1.Text))) - (double.Parse(txt_y1.Text) - b0) / (double.Parse(txt_x1.Text) -
                                 double.Parse(txt_x0.Text))) / (double.Parse(txt_x2.Text) - double.Parse(txt_x0.Text));
 
 
@@ -308,15 +317,7 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("FÓRMULA DE LA INTERPOLACIÓN CUADRÁTICA");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• f(x) = b₀ + b₁ (x - x₀) + b2 (x - x₀) (x - x₁)");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("donde...");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• b₀ = f(x₀)");
-                            lbox_results.Items.Add("• b₁ = f(x₁) - f(x₀) ÷ x₁ - x₀");
-                            lbox_results.Items.Add("• b₂ = ((f(x₂) - f(x₁)) ÷ (x₂ - x₁)) - ((f(x₁) - f(x₀)) ÷ (x₁ - x₀)) ÷ x₂ - x₀");
+                            templateCuadratica(); // Plantilla fórmula de interpolación lineal.
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
@@ -331,8 +332,8 @@ namespace calc_polation_2022
                                 "b₁" + igual + "(" + txt_y1.Text + menos + b0 + ")" + entre + "(" + txt_x1.Text + menos + txt_x0.Text + ")"
                                 );
                             lbox_results.Items.Add(
-                                "b₂" + igual + "(" + txt_y2.Text + menos + txt_y1.Text + ")" + entre + "(" + txt_x2.Text + menos + 
-                                txt_x1.Text + ")" + menos + "(" + txt_y1.Text + menos + b0 + ")" + entre + "(" + txt_x1.Text + menos + 
+                                "b₂" + igual + "(" + txt_y2.Text + menos + txt_y1.Text + ")" + entre + "(" + txt_x2.Text + menos +
+                                txt_x1.Text + ")" + menos + "(" + txt_y1.Text + menos + b0 + ")" + entre + "(" + txt_x1.Text + menos +
                                 txt_x0.Text + ")" + entre + "(" + txt_x2.Text + menos + txt_x0.Text + ")"
                                 );
                             lbox_results.Items.Add("");
@@ -351,7 +352,7 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("• Tercer paso: Una vez obtenidos, se remplazan en la fórmula de interpolación.");
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add(
-                                "f(x)" + igual + b0 + " " + mas + b1 + " " + "(" + txt_x.Text + menos + txt_x0.Text + ")" + mas + 
+                                "f(x)" + igual + b0 + " " + mas + b1 + " " + "(" + txt_x.Text + menos + txt_x0.Text + ")" + mas +
                                 b2 + " " + "(" + txt_x.Text + menos + txt_x0.Text + ") " + "(" + txt_x.Text + menos + txt_x1.Text + ")"
                                 );
                             lbox_results.Items.Add("");
@@ -427,15 +428,7 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("FÓRMULA DE LA INTERPOLACIÓN CUADRÁTICA");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• f(x) = b₀ + b₁ (x - x₀) + b2 (x - x₀) (x - x₁)");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("donde...");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• b₀ = f(x₀)");
-                            lbox_results.Items.Add("• b₁ = f(x₁) - f(x₀) ÷ x₁ - x₀");
-                            lbox_results.Items.Add("• b₂ = ((f(x₂) - f(x₁)) ÷ (x₂ - x₁)) - ((f(x₁) - f(x₀)) ÷ (x₁ - x₀)) ÷ x₂ - x₀");
+                            templateCuadratica(); // Plantilla fórmula de interpolación lineal.
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
@@ -510,7 +503,7 @@ namespace calc_polation_2022
                             part2 = b1 * (double.Parse(txt_x.Text) - double.Parse(txt_x0.Text));
                             part3 = part2 + part1;
                             result = b0 + part3;
-                            result = Math.Round(result , 4);
+                            result = Math.Round(result, 4);
                         }
                         catch (Exception)
                         {
@@ -546,15 +539,7 @@ namespace calc_polation_2022
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
-                            lbox_results.Items.Add("FÓRMULA DE LA INTERPOLACIÓN CUADRÁTICA");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• f(x) = b₀ + b₁ (x - x₀) + b2 (x - x₀) (x - x₁)");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("donde...");
-                            lbox_results.Items.Add("");
-                            lbox_results.Items.Add("• b₀ = f(x₀)");
-                            lbox_results.Items.Add("• b₁ = f(x₁) - f(x₀) ÷ x₁ - x₀");
-                            lbox_results.Items.Add("• b₂ = ((f(x₂) - f(x₁)) ÷ (x₂ - x₁)) - ((f(x₁) - f(x₀)) ÷ (x₁ - x₀)) ÷ x₂ - x₀");
+                            templateCuadratica(); // Plantilla fórmula de interpolación lineal.
                             lbox_results.Items.Add("");
                             lbox_results.Items.Add("─────────────────────────────────");
                             lbox_results.Items.Add("");
@@ -619,48 +604,103 @@ namespace calc_polation_2022
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
-            reset();
+            reset(gb_values);
+
+            if (cb_calculate_percent.Checked == true)
+            {
+                lbox_results.Items.Add("");
+                lbox_results.Items.Add("• Ingrese el valor verdadero en Vv y el valor aproximado en Vapx.");
+            }
         }
 
         private void cb_calculate_percent_CheckedChanged(object sender, EventArgs e)
         {
             if (cb_calculate_percent.Checked == true)
             {
-                ifTxtBoxEmpty(gb_values); // Determina si hay TextBox vacíos.
                 lbox_results.Items.Clear(); // Reseteo del listBox.
 
                 templateETP();
 
-                txt_x0.Enabled = false;
-                txt_x1.Enabled = false;
-                txt_x2.Enabled = false;
-                txt_y0.Enabled = false;
-                txt_y1.Enabled = false;
-                txt_y2.Enabled = false;
+                lbox_results.Items.Add("");
+                lbox_results.Items.Add("• Ingrese el valor verdadero en Vv y el valor aproximado en Vapx.");
 
-                txt_x0.Text = "0";
-                txt_x1.Text = "0";
-                txt_x2.Text = "0";
-                txt_y0.Text = "0";
-                txt_y1.Text = "0";
-                txt_y2.Text = "0";
+                lbl_x.Text = "Vv =";
+                lbl_vv.Visible = true;
+
+                lbl_fx.Text = "Vapx =";
+                lbl_va.Visible = true;
+
+                txt_x.Text = "0";
+
+                txt_x0.Enabled = false;
+                txt_x0.Visible = false;
+                lbl_x0.Visible = false; // Label.
+
+                txt_x1.Enabled = false;
+                txt_x1.Visible = false;
+                lbl_x1.Visible = false; // Label.
+
+                txt_x2.Enabled = false;
+                txt_x2.Visible = false;
+                lbl_x2.Visible = false; // Label.
+
+                txt_y0.Enabled = false;
+                txt_y0.Visible = false;
+                lbl_y0.Visible = false; // Label.
+
+                txt_y1.Enabled = false;
+                txt_y1.Visible = false;
+                lbl_y1.Visible = false; // Label.
+
+                txt_y2.Enabled = false;
+                txt_y2.Visible = false;
+                lbl_y2.Visible = false; // Label.
 
                 txt_fx.Enabled = true;
+
+                gb_values.Size = new Size(730, 75);
+
             }
             else
             {
                 lbox_results.Items.Clear(); // Reseteo del listBox.
 
-                templateLineal();
+                templateCuadratica();
+
+                lbl_x.Text = "X =";
+                lbl_vv.Visible = false;
+
+                lbl_fx.Text = "F(X) =";
+                lbl_va.Visible = false;
+
+                txt_x.Text = "0";
 
                 txt_x0.Enabled = true;
+                txt_x0.Visible = true;
+                lbl_x0.Visible = true; // Label.
+
                 txt_x1.Enabled = true;
+                txt_x1.Visible = true;
+                lbl_x1.Visible = true; // Label.
+
                 txt_x2.Enabled = true;
+                txt_x2.Visible = true;
+                lbl_x2.Visible = true; // Label.
+
                 txt_y0.Enabled = true;
+                txt_y0.Visible = true;
+                lbl_y0.Visible = true; // Label.
+
                 txt_y1.Enabled = true;
+                txt_y1.Visible = true;
+                lbl_y1.Visible = true; // Label.
+
                 txt_y2.Enabled = true;
+                txt_y2.Visible = true;
+                lbl_y2.Visible = true; // Label.
 
                 txt_fx.Enabled = false;
+                gb_values.Size = new Size(730, 194);
                 if (txt_fx.Text == string.Empty)
                 {
                     txt_fx.Text = "0";
@@ -750,7 +790,7 @@ namespace calc_polation_2022
             foreach (Control oControls in CALPO_Lineal.Controls)
             {
                 // Si encuentra un TextBox vacío.
-                if (oControls is TextBox & oControls.Text == string.Empty)
+                if (oControls is TextBox & oControls.Enabled == true & oControls.Text == string.Empty)
                 {
                     txtEmpty = true;
                 }
@@ -763,7 +803,7 @@ namespace calc_polation_2022
             foreach (Control oControls in CALPO_Lineal.Controls)
             {
                 // Si encuentra un TextBox con únicamente un - o punto o ambos juntos.
-                if (oControls is TextBox & oControls.Text == "-" || oControls.Text == "." ||
+                if (oControls is TextBox & oControls.Enabled == true & oControls.Text == "-" || oControls.Text == "." ||
                     oControls.Text.Contains("-.") || oControls.Text.Contains(".-") ||
                     oControls.Text.EndsWith("-"))
                 {
@@ -772,7 +812,7 @@ namespace calc_polation_2022
             }
         }
 
-        private void reset()
+        private void reset(Control CALPO_Lineal)
         {
             lbox_results.Items.Clear(); // Reseteo del listBox.
 
@@ -782,25 +822,24 @@ namespace calc_polation_2022
             }
             else
             {
-                templateLineal();
+                templateCuadratica();
             }
 
             // Restablece por default cada campo.
-            txt_x.Text = "0";
-            txt_x0.Text = "0";
-            txt_x1.Text = "0";
-            txt_x2.Text = "0";
-            txt_y0.Text = "0";
-            txt_y1.Text = "0";
-            txt_y2.Text = "0";
-            txt_fx.Text = "0";
+            foreach (Control oControls in CALPO_Lineal.Controls)
+            {
+                if (oControls is TextBox)
+                {
+                    oControls.Text = "0";
+                }
+            }
         }
 
-        private void templateLineal()
+        private void templateCuadratica()
         {
             lbox_results.Items.Add("FÓRMULA DE LA INTERPOLACIÓN CUADRÁTICA");
             lbox_results.Items.Add("");
-            lbox_results.Items.Add("• f(x) = b₀ + b₁ (x - x₀) + b2 (x - x₀) (x - x₁)");
+            lbox_results.Items.Add("• f(x) = b₀ + b₁ (x - x₀) + b₂ (x - x₀) (x - x₁)");
             lbox_results.Items.Add("");
             lbox_results.Items.Add("donde...");
             lbox_results.Items.Add("");
@@ -813,8 +852,9 @@ namespace calc_polation_2022
         {
             lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
             lbox_results.Items.Add("");
-            lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-            lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
+            lbox_results.Items.Add("• Ev = valor verdadero(Vv) - valor aproximado(Vapx)");
+            lbox_results.Items.Add("• Ev = error verdadero");
+            lbox_results.Items.Add("• Et = Ev ÷ valor verdadero * 100%");
         }
     }
 }
