@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "MZhBptSxk/Yp7sgMOpx4z+YsEmYDLBw6Meci6hsmHIArSSfBPxeX7Lyn6lBAVi+XaD/jlejSk/6oaLI6gKxw5A==",
+  "dgSpecHash": "cGgQFE4zaJKjGgkt1sR9IIK4W4Wr0TxC9HTJxIqF40XIUEjpmgntaVoqCM9HcH7H55tJw2ztZx4OqjpnNjnSaQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\johny\\source\\repos\\JohnyDeCoder\\calc-polation\\calc-polation-2022\\calc-polation-2022.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johny\\.nuget\\packages\\font.awesome\\5.15.4\\font.awesome.5.15.4.nupkg.sha512",
     "C:\\Users\\johny\\.nuget\\packages\\fontawesome.sharp\\5.15.4\\fontawesome.sharp.5.15.4.nupkg.sha512",
-    "C:\\Users\\johny\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.22\\microsoft.windows.sdk.net.ref.10.0.22000.22.nupkg.sha512"
+    "C:\\Users\\johny\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.22000.23\\microsoft.windows.sdk.net.ref.10.0.22000.23.nupkg.sha512"
   ],
   "logs": []
 }

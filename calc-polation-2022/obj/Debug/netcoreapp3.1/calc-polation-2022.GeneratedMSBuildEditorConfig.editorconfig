@@ -1,0 +1,9 @@
+is_global = true
+build_property.ApplicationManifest = 
+build_property.StartupObject = calc_polation_2022.Program
+build_property.ApplicationDefaultFont = 
+build_property.ApplicationHighDpiMode = 
+build_property.ApplicationUseCompatibleTextRendering = 
+build_property.ApplicationVisualStyles = 
+build_property.RootNamespace = calc_polation_2022
+build_property.ProjectDir = C:\Users\johny\source\repos\JohnyDeCoder\calc-polation\calc-polation-2022\

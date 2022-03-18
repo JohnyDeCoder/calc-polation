@@ -23,7 +23,7 @@
     <IsPublishable>True</IsPublishable>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
-    <UseWPF>True</UseWPF>
+    <UseWPF>False</UseWPF>
     <DebugType>portable</DebugType>
     <AssemblyName>calc-polation</AssemblyName>
     <Company>JohnyDeCoder y BrandonMoran11</Company>

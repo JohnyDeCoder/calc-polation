@@ -37,6 +37,8 @@
             this.btn_reset = new FontAwesome.Sharp.IconButton();
             this.btn_calculate = new FontAwesome.Sharp.IconButton();
             this.gb_values = new System.Windows.Forms.GroupBox();
+            this.lbl_va = new System.Windows.Forms.Label();
+            this.lbl_vv = new System.Windows.Forms.Label();
             this.txt_fx = new System.Windows.Forms.TextBox();
             this.lbl_fx = new System.Windows.Forms.Label();
             this.txt_y1 = new System.Windows.Forms.TextBox();
@@ -77,7 +79,7 @@
             // 
             this.cb_calculate_percent.AutoSize = true;
             this.cb_calculate_percent.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cb_calculate_percent.Location = new System.Drawing.Point(8, 170);
+            this.cb_calculate_percent.Location = new System.Drawing.Point(6, 179);
             this.cb_calculate_percent.Name = "cb_calculate_percent";
             this.cb_calculate_percent.Size = new System.Drawing.Size(126, 34);
             this.cb_calculate_percent.TabIndex = 7;
@@ -91,11 +93,11 @@
             this.gb_results_type.Controls.Add(this.rb_redondeo);
             this.gb_results_type.Controls.Add(this.rb_noRedondeo);
             this.gb_results_type.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_results_type.Location = new System.Drawing.Point(6, 210);
+            this.gb_results_type.Location = new System.Drawing.Point(6, 229);
             this.gb_results_type.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_results_type.Name = "gb_results_type";
             this.gb_results_type.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gb_results_type.Size = new System.Drawing.Size(139, 127);
+            this.gb_results_type.Size = new System.Drawing.Size(139, 108);
             this.gb_results_type.TabIndex = 2;
             this.gb_results_type.TabStop = false;
             this.gb_results_type.Text = "Tipo de Resultado";
@@ -170,6 +172,8 @@
             // 
             // gb_values
             // 
+            this.gb_values.Controls.Add(this.lbl_va);
+            this.gb_values.Controls.Add(this.lbl_vv);
             this.gb_values.Controls.Add(this.txt_fx);
             this.gb_values.Controls.Add(this.lbl_fx);
             this.gb_values.Controls.Add(this.txt_y1);
@@ -191,6 +195,28 @@
             this.gb_values.TabIndex = 2;
             this.gb_values.TabStop = false;
             this.gb_values.Text = "Valores";
+            // 
+            // lbl_va
+            // 
+            this.lbl_va.AutoSize = true;
+            this.lbl_va.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_va.Location = new System.Drawing.Point(430, 10);
+            this.lbl_va.Name = "lbl_va";
+            this.lbl_va.Size = new System.Drawing.Size(132, 15);
+            this.lbl_va.TabIndex = 14;
+            this.lbl_va.Text = "VALOR APROXIMADO";
+            this.lbl_va.Visible = false;
+            // 
+            // lbl_vv
+            // 
+            this.lbl_vv.AutoSize = true;
+            this.lbl_vv.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbl_vv.Location = new System.Drawing.Point(64, 10);
+            this.lbl_vv.Name = "lbl_vv";
+            this.lbl_vv.Size = new System.Drawing.Size(121, 15);
+            this.lbl_vv.TabIndex = 13;
+            this.lbl_vv.Text = "VALOR VERDADERO";
+            this.lbl_vv.Visible = false;
             // 
             // txt_fx
             // 
@@ -415,5 +441,7 @@
         private TextBox txt_fx;
         private Label lbl_fx;
         private CheckBox cb_calculate_percent;
+        private Label lbl_vv;
+        private Label lbl_va;
     }
 }

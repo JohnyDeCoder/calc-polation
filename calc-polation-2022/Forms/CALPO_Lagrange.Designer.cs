@@ -71,7 +71,7 @@
             this.gb_results.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.gb_results.Location = new System.Drawing.Point(169, 9);
             this.gb_results.Name = "gb_results";
-            this.gb_results.Size = new System.Drawing.Size(573, 406);
+            this.gb_results.Size = new System.Drawing.Size(573, 425);
             this.gb_results.TabIndex = 9;
             this.gb_results.TabStop = false;
             this.gb_results.Text = "Resultados";
@@ -90,7 +90,7 @@
             this.lbox_results.Location = new System.Drawing.Point(11, 22);
             this.lbox_results.Name = "lbox_results";
             this.lbox_results.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.lbox_results.Size = new System.Drawing.Size(551, 374);
+            this.lbox_results.Size = new System.Drawing.Size(551, 396);
             this.lbox_results.TabIndex = 4;
             this.lbox_results.TabStop = false;
             // 
@@ -113,7 +113,7 @@
             this.gb_values.Controls.Add(this.txt_x);
             this.gb_values.Controls.Add(this.lbl_x);
             this.gb_values.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_values.Location = new System.Drawing.Point(12, 421);
+            this.gb_values.Location = new System.Drawing.Point(12, 440);
             this.gb_values.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_values.Name = "gb_values";
             this.gb_values.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -329,7 +329,7 @@
             this.gb_options.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_options.Name = "gb_options";
             this.gb_options.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.gb_options.Size = new System.Drawing.Size(150, 406);
+            this.gb_options.Size = new System.Drawing.Size(150, 425);
             this.gb_options.TabIndex = 7;
             this.gb_options.TabStop = false;
             this.gb_options.Text = "Opciones";
@@ -339,7 +339,7 @@
             this.gb_orden_type.Controls.Add(this.rb_orden_2);
             this.gb_orden_type.Controls.Add(this.rb_orden_1);
             this.gb_orden_type.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_orden_type.Location = new System.Drawing.Point(6, 324);
+            this.gb_orden_type.Location = new System.Drawing.Point(6, 346);
             this.gb_orden_type.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_orden_type.Name = "gb_orden_type";
             this.gb_orden_type.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -380,7 +380,7 @@
             // 
             this.cb_calculate_percent.AutoSize = true;
             this.cb_calculate_percent.Font = new System.Drawing.Font("Malgun Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cb_calculate_percent.Location = new System.Drawing.Point(10, 170);
+            this.cb_calculate_percent.Location = new System.Drawing.Point(10, 183);
             this.cb_calculate_percent.Name = "cb_calculate_percent";
             this.cb_calculate_percent.Size = new System.Drawing.Size(126, 34);
             this.cb_calculate_percent.TabIndex = 7;
@@ -394,7 +394,7 @@
             this.gb_results_type.Controls.Add(this.rb_redondeo);
             this.gb_results_type.Controls.Add(this.rb_noRedondeo);
             this.gb_results_type.Font = new System.Drawing.Font("Malgun Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gb_results_type.Location = new System.Drawing.Point(6, 210);
+            this.gb_results_type.Location = new System.Drawing.Point(6, 232);
             this.gb_results_type.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gb_results_type.Name = "gb_results_type";
             this.gb_results_type.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -476,7 +476,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(754, 682);
+            this.ClientSize = new System.Drawing.Size(754, 706);
             this.Controls.Add(this.gb_results);
             this.Controls.Add(this.gb_values);
             this.Controls.Add(this.gb_options);

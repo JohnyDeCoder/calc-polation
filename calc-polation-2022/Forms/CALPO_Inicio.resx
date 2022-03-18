@@ -57,217 +57,158 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;btn_help_about.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="panel_sub_help.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="panel_lateral.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel_logo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="btn_help_about.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 40</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_cuadratica.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_help.Name" xml:space="preserve">
-    <value>panel_sub_help</value>
-  </data>
-  <data name="panel_sub_help.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 316</value>
-  </data>
-  <data name="panel_form.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_cuadratica.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;panel_logo.Name" xml:space="preserve">
-    <value>panel_logo</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="panel_form.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel_lateral.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;picB_calpo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btn_usar.Parent" xml:space="preserve">
-    <value>panel_sub_help</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_interpolacion.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_inter_lineal.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btn_interpolacion.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
-  </data>
-  <data name="btn_exit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 516</value>
-  </data>
-  <data name="&gt;&gt;btn_usar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>CALPO_Inicio</value>
-  </data>
-  <data name="&gt;&gt;btn_exit.Parent" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="&gt;&gt;btn_help.Name" xml:space="preserve">
-    <value>btn_help</value>
-  </data>
-  <data name="panel_sub_help.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;panel_form.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_help_about.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_repository.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btn_repository.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_help_about.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel_sub_interpolacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="&gt;&gt;btn_interpolacion.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btn_help_about.Name" xml:space="preserve">
-    <value>btn_help_about</value>
-  </data>
-  <data name="panel_sub_interpolacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 145</value>
-  </data>
-  <data name="picB_calpo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="panel_lateral.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="&gt;&gt;panel_logo.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btn_interpolacion.Name" xml:space="preserve">
-    <value>btn_interpolacion</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_help.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>7, 15</value>
-  </data>
-  <data name="&gt;&gt;panel_lateral.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_inter_lineal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;panel_logo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="btn_usar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btn_exit.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;btn_usar.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;btn_lagrange.Parent" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_cuadratica.Parent" xml:space="preserve">
-    <value>panel_sub_interpolacion</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_lineal.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_interpolacion.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="picB_calpo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;picB_calpo.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;btn_exit.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_interpolacion.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 100</value>
-  </data>
-  <data name="&gt;&gt;btn_interpolacion.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;btn_lagrange.Name" xml:space="preserve">
-    <value>btn_lagrange</value>
-  </data>
-  <data name="btn_exit.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel_logo.Parent" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>950, 600</value>
-  </data>
-  <data name="&gt;&gt;panel_form.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="btn_exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="btn_repository.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 397</value>
-  </data>
-  <data name="btn_usar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;picB_calpo.Parent" xml:space="preserve">
-    <value>panel_logo</value>
-  </data>
-  <data name="btn_lagrange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_lineal.Parent" xml:space="preserve">
-    <value>panel_sub_interpolacion</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_repository.Name" xml:space="preserve">
     <value>btn_repository</value>
   </data>
-  <data name="btn_usar.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="panel_form.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 0</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="btn_inter_cuadratica.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="btn_help.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 271</value>
+  <data name="&gt;&gt;btn_inter_cuadratica.Parent" xml:space="preserve">
+    <value>panel_sub_interpolacion</value>
   </data>
-  <data name="&gt;&gt;btn_exit.Name" xml:space="preserve">
-    <value>btn_exit</value>
+  <data name="&gt;&gt;picB_calpo.Parent" xml:space="preserve">
+    <value>panel_logo</value>
   </data>
-  <data name="panel_lateral.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;panel_sub_interpolacion.Name" xml:space="preserve">
+    <value>panel_sub_interpolacion</value>
+  </data>
+  <data name="&gt;&gt;btn_help.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="panel_logo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAlhrmAMgp/wDHLf8Alhrmfa8n///HOP//xzz//8c////HQ///yEb//8dL///ITv//x1H//8dV
+        ///GWf//x1z//8df///HY///x2b//8dq///Hbf//xnH//8d0///HeP//x3z//8Z////Hgv//xob//795
+        //+WGubYAAAAAAAAAACYGeMAwyn/AMMt/wCYGeMUmBnj+sI3///DPP//wz///8NC///DRv//w0v//8NO
+        ///CUf//wlT//8JZ///CXP//wl///8Jj///CZv//wmr//8Jt///Ccf//wnT//8J4///CfP//wn///8KC
+        ///Bhf//vHn//5gZ49gAAAAAAAAAAJkZ4AC+Kf8Avi3/AL4x/wCZGeCRpiP5/748//++P///vkP//75G
+        //+/S///vk7//71R//+9VP//vVn//71c//++YP//vmP//75m//++av//vm3//75x//+9df//vXj//717
+        //+9fv//vIL//7yG//+3ef//mRng2AAAAAAAAAAAmxneALoq/wC6Lf8AujH/ALo0/wCbGd7ltzj//7o/
+        //+6Q///uEX//5sZ3v+bGd7/mxne/5sZ3v+bGd7/mxne/5sZ3v+bGd7/mxne/5sZ3v+bGd7/mxne/5sZ
+        3v+bGd7/uHr//7h+//+4gv//uIX//7Ny//+bGd7IAAAAAAAAAACdGNoAtin/ALYt/wC2Mf8AtjX/AJ0Y
+        2nyiH+n/tkD//7VD//+0Rv//rTz//50Y2rS0Uf8AtVT/ALRZ/wC1XP8AtV//ALVj/wC1Zv8AtWr/ALVt
+        /wC1cf8AtXX/AJ0Y2vq0ef//tH///7SC//+0hv//rF7//50Y2psAAAAAAAAAAJ8Y2ACxKf8AsS3/ALEx
+        /wCxNf8AsTj/AJ8Y2MisN///sEP//7BG//+wS///nxjY/p8Y2G+wVP8AsFn/ALBc/wCwX/8AsGP/ALBn
+        /wCwav8AsG3/ALBx/wCvdf8AnxjY/q97//+vf///r4L//6+G//+nUfv/nxjYfQAAAAAAAAAAoRjVAK0p
+        /wCsLf8ArTH/AKw1/wCrOP8AoRjVX6EY1fqrQv//q0b//6xL//+qRv//oRjV2KtV/wCrWf8ArF3/AKxf
+        /wCsY/8ArGb/AKxq/wCsbf8Aq3H/AKt1/wChGNX+q3v//6p///+qgv//qob//6RB7/+hGNVZAAAAAAAA
+        AACjF9EApyn/AKct/wCnMf8ApzT/AKc4/wCmPP8AoxfRkaUt+v+oRv//p0v//6dO//+kIuH/oxfRhqdZ
+        /wCnXP8Ap1//AKdj/wCnZv8Apmr/AKZt/wCmcf8Ap3X/AKMX0f+me///pn///6aC//+mhv//oxfR/6MX
+        0QAAAAAAAAAAAKYXzQCjKf8Aoy3/AKMx/wCiNP8Aozj/AKI8/wCmF80UphfN76ND//+iS///ok7//6JO
+        //+mF83vo1n/AKNc/wCjX/8AomP/AKJm/wCiav8Aom3/AKJx/wCmF80wpSrd/6J7//+if///ooL//6KF
+        //+mF83/phfNAAAAAAAAAAAAqBbJAJ4p/wCeLP8AnjH/AJ40/wCfOP8Anjz/AJ4//wCoFsmGpR/b/55L
+        //+eTv//nlH//6Qs6f+oFsmRnVz/AJ5f/wCeY/8Anmf/AJ5q/wCdbf8AnXH/AKgWyVmkOen/nXz//51/
+        //+cgv//nYX//6gWyf6oFskAAAAAAAAAAACrFsYAmin/AJos/wCaMf8AmjT/AJo4/wCaPP8AmT//AJpD
+        /wCrFsbYnEP//5pO//+aUf//mFT//6sWxvqrFsZLmWD/AJlj/wCZZv8AmWr/AJlt/wCZcf8AqxbGfaJH
+        8/+Ye///mH///5eC//+YhP//qxbG+qsWxgAAAAAAAAAAAK0WwQCWKf8AlSz/AJUx/wCVNP8AlTj/AJU8
+        /wCVQP8AlUP/AK0WwW+tFsH9lE7//5RR//+UVf//nEX//60WwbSUX/8AlGP/AJRm/wCUaf8AlGz/AJRx
+        /wCtFsGbnlL8/5N8//+Tf///k4L//5R+//+tFsHvrRbBAAAAAAAAAAAArxS+AJEp/wCRLP8AkTH/AJA0
+        /wCROP8AkDz/AJA//wCQQ/8AkEb/AK8UvpucOP3/kFH//5BU//+PWf//rxS+/q8Uvm+QY/8AkGb/AJBp
+        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
+        //9FbP//RXH//1tk7//NDovYRHr/AM0OiwAAAAAAAAAAAM8NiABEI/8Azw2IlqAYtP9FLf//RDH//00y
+        /f/PDYjvzw2IlIwmxP9CQP//QkP//1JA9P/PDYjlQkz/AEFP/wBBU/8AQVX+AM8NiG+2HJ//Ql/9/0Bi
+        /f9AZf7/QWj9/0Br/f9AcP7/Yl3l/88NiMhAef0Azw2IAAAAAAAAAAAA0Q2FANENhVmfF7P/QCr//z4t
+        //8+Mf//ayje/9ENhbTRDYX9Pzz+/z5A//88Qv//PUX+/9ENhf89TP0APE79AD1R/AA9VPwAPFf8ANEN
+        hbRqR9r/PGH7/ztl+/87Z/v/O2r7/ztu+/95S8//0Q2Fmzt4+wDRDYUAAAAAAAAAAADSDYIAOyP/ANIN
+        gpbSDYL/0g2C/9INgv/SDYK00g2CS9INgpTSDYL90g2C/9INgv/SDYL/0g2CljdL+wA3TvkAN1H6ADdU
+        +gA3VvoA0g2CS9INgvo6X/b/NmP4/zVm+f82avr/Nm35/4k/vf/SDYJ9NXf5ANINggAAAAAAAAAAANQM
+        gAA3Iv8ANif/ADQp/wA1LP8ANTD/ADUy/wA1Nf0ANTj8ADU8/AAzP/sAM0H6ADJE+gAyRvkAM0r5ADFN
+        +AAyUPgAMlP4ADJV9wAyWfcA1AyAkZ4qqv8xY/f/MWX3/zBo9v8xbPf/njCr/9QMgFkwdvgA1AyAAAAA
+        AAAAAAAA1Qx+ADEi/wAxJv8AMin/ADEr/gAwLv0ALzL9AC80+wAvOPsALzv6AC8++QAvQfkALkP4AC5H
+        +AAuSvcALk33AC5P9wAtUvcALVX2AC1Z9gAtXPYA1Qx+5UBa6f8tZfb/K2f1/ytr9f/VDH7/KnH1ACp1
+        9gDVDH4AAAAAAAAAAADWDHwA1gx8ANYMfADWDHwA1gx8ANYMfADWDHwA1gx8ANYMfADWDHwA1gx8ANYM
+        fADWDHwA1gx8ANYMfADWDHwA1gx8ANYMfADWDHwA1gx8ANYMfADWDHx81gx85dYMfP/WDHz/1gx8/9YM
+        fJbWDHwA1gx8ANYMfAAAAAAA8AAAAfAAAAH4AAAB/AAAAfwH/wH+A/8B/gP/Af8B/wP/Af4D/4D+A//A
+        fgP/wH4D/+A+A//gPgP/8B4DgQAeA4AADgOAAAYDgAQGA8AOAgfgDwIH8B8AB/gPgAf4B4AH8APAB/AB
+        4AfgAeAHwAHwB+AB8Af///gH///8D////A8=
+</value>
+  </data>
+  <data name="btn_help_about.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;panel_form.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="btn_repository.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;btn_inter_lineal.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btn_lagrange.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btn_repository.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;btn_inter_cuadratica.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="picB_calpo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel_form.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="panel_logo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="btn_exit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 516</value>
+  </data>
+  <data name="&gt;&gt;btn_inter_lineal.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panel_sub_help.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 316</value>
+  </data>
+  <data name="panel_sub_interpolacion.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;panel_logo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btn_lagrange.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
@@ -275,17 +216,239 @@
   <data name="&gt;&gt;btn_help_about.Parent" xml:space="preserve">
     <value>panel_sub_help</value>
   </data>
-  <data name="panel_logo.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;btn_help.Name" xml:space="preserve">
+    <value>btn_help</value>
+  </data>
+  <data name="picB_calpo.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_repository.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="btn_lagrange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 226</value>
+  </data>
+  <data name="&gt;&gt;btn_interpolacion.Name" xml:space="preserve">
+    <value>btn_interpolacion</value>
+  </data>
+  <data name="btn_inter_lineal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;panel_sub_help.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel_form.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel_lateral.Name" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="&gt;&gt;btn_help.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btn_usar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_usar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;btn_repository.Parent" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="&gt;&gt;panel_logo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btn_interpolacion.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel_sub_interpolacion.Parent" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="&gt;&gt;btn_interpolacion.Parent" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="btn_lagrange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;picB_calpo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_exit.Parent" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="&gt;&gt;panel_lateral.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_inter_lineal.Name" xml:space="preserve">
+    <value>btn_inter_lineal</value>
+  </data>
+  <data name="&gt;&gt;panel_sub_interpolacion.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel_lateral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_inter_cuadratica.Name" xml:space="preserve">
+    <value>btn_inter_cuadratica</value>
+  </data>
+  <data name="&gt;&gt;btn_exit.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;panel_logo.Parent" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="btn_help.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;btn_exit.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;btn_lagrange.Parent" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="&gt;&gt;btn_lagrange.Name" xml:space="preserve">
+    <value>btn_lagrange</value>
+  </data>
+  <data name="panel_lateral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;btn_interpolacion.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="panel_lateral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="btn_inter_cuadratica.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_help.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 271</value>
+  </data>
+  <data name="btn_repository.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 397</value>
+  </data>
+  <data name="btn_usar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>CALPO_Inicio</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="picB_calpo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 50</value>
+  </data>
+  <data name="btn_inter_lineal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="panel_sub_interpolacion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
   </data>
   <data name="btn_lagrange.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;btn_lagrange.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="btn_help_about.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="panel_sub_help.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="&gt;&gt;picB_calpo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>CALPO: Inicio</value>
   </data>
   <data name="&gt;&gt;picB_calpo.Name" xml:space="preserve">
     <value>picB_calpo</value>
+  </data>
+  <data name="&gt;&gt;panel_lateral.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btn_exit.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;btn_help_about.Name" xml:space="preserve">
+    <value>btn_help_about</value>
+  </data>
+  <data name="&gt;&gt;btn_interpolacion.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="btn_interpolacion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 100</value>
+  </data>
+  <data name="&gt;&gt;panel_logo.Name" xml:space="preserve">
+    <value>panel_logo</value>
+  </data>
+  <data name="&gt;&gt;btn_repository.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btn_usar.Parent" xml:space="preserve">
+    <value>panel_sub_help</value>
+  </data>
+  <data name="&gt;&gt;btn_usar.Type" xml:space="preserve">
+    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
+  </data>
+  <data name="&gt;&gt;btn_usar.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel_sub_interpolacion.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="panel_logo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="&gt;&gt;btn_exit.Name" xml:space="preserve">
+    <value>btn_exit</value>
+  </data>
+  <data name="&gt;&gt;btn_usar.Name" xml:space="preserve">
+    <value>btn_usar</value>
+  </data>
+  <data name="&gt;&gt;btn_inter_lineal.Parent" xml:space="preserve">
+    <value>panel_sub_interpolacion</value>
+  </data>
+  <data name="btn_help_about.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 40</value>
+  </data>
+  <data name="panel_lateral.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;panel_form.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btn_help_about.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>934, 561</value>
+  </data>
+  <data name="panel_sub_interpolacion.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 145</value>
+  </data>
+  <data name="btn_help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btn_exit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;panel_sub_help.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panel_form.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel_sub_help.Parent" xml:space="preserve">
+    <value>panel_lateral</value>
+  </data>
+  <data name="&gt;&gt;panel_sub_help.Name" xml:space="preserve">
+    <value>panel_sub_help</value>
+  </data>
+  <data name="panel_sub_help.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
   </data>
   <data name="btn_inter_cuadratica.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 40</value>
@@ -293,109 +456,16 @@
   <data name="&gt;&gt;panel_form.Name" xml:space="preserve">
     <value>panel_form</value>
   </data>
-  <data name="btn_repository.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>950, 600</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>934, 561</value>
-  </data>
-  <data name="btn_help.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;btn_help_about.Type" xml:space="preserve">
+  <data name="&gt;&gt;btn_inter_cuadratica.Type" xml:space="preserve">
     <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_help.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="panel_form.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 0</value>
-  </data>
-  <data name="&gt;&gt;btn_repository.Parent" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_cuadratica.Name" xml:space="preserve">
-    <value>btn_inter_cuadratica</value>
-  </data>
-  <data name="btn_inter_cuadratica.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
-  <data name="&gt;&gt;panel_lateral.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="btn_help.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btn_help_about.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_help.Parent" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_lineal.Name" xml:space="preserve">
-    <value>btn_inter_lineal</value>
-  </data>
-  <data name="&gt;&gt;panel_lateral.Name" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="&gt;&gt;btn_help.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="picB_calpo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 50</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_interpolacion.Name" xml:space="preserve">
-    <value>panel_sub_interpolacion</value>
-  </data>
-  <data name="&gt;&gt;btn_usar.Name" xml:space="preserve">
-    <value>btn_usar</value>
-  </data>
-  <data name="&gt;&gt;btn_inter_lineal.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="panel_logo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>200, 100</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_interpolacion.Parent" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="&gt;&gt;btn_help.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel_sub_interpolacion.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
   </data>
   <data name="&gt;&gt;btn_help.Parent" xml:space="preserve">
     <value>panel_lateral</value>
   </data>
-  <data name="btn_interpolacion.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 23</value>
-  </data>
   <data name="btn_inter_lineal.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>CALPO: Inicio</value>
-  </data>
-  <data name="&gt;&gt;panel_sub_interpolacion.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;btn_repository.Type" xml:space="preserve">
-    <value>FontAwesome.Sharp.IconButton, FontAwesome.Sharp, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f</value>
-  </data>
-  <data name="&gt;&gt;btn_interpolacion.Parent" xml:space="preserve">
-    <value>panel_lateral</value>
-  </data>
-  <data name="&gt;&gt;panel_form.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="btn_lagrange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 226</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, System.Private.CoreLib, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-    <value>es-MX</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
 </root>
