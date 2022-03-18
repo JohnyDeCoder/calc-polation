@@ -1,10 +1,10 @@
 # CALC-POLATION ₂₀₂₂
 
 _Una calculadora de interpolación lineal, cuadrática y Polinomios de Lagrange._
-![Image text](https://i.ibb.co/rZxm09P/Logotipo-Alternative.png)
+![Logotipo Alternativo](https://i.ibb.co/rZxm09P/Logotipo-Alternative.png)
 ## Comenzando
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas (estas instrucciones pueden fallar)._
 
 ### Pre-requisitos
 
@@ -19,82 +19,79 @@ _Se utilizó la siguiente herramienta para el desarrollo del proyecto:_
 
 ## Contribuyendo
 
-_Se utilizó [LiveShare](https://visualstudio.microsoft.com/es/services/live-share/) por parte de ambos desarolladores para el desarrollo de la aplicación._
+_Usamos [LiveShare](https://visualstudio.microsoft.com/es/services/live-share/) por parte de los desarolladores de la aplicación para el desarrollo colaborativo._
 
 ## Cómo usar
-### Panel
-* Dentro *Panel* se mostrarán una serie de botones cuyas funciones son las siguientes:
+* _Estas instrucciones te ayudarán a familiarizarte con la aplicación de manera sencilla._
+### Panel lateral
+* _Dentro del **panel lateral** se mostrarán una serie de botones cuyas funciones son las siguientes:_
 
-![Image text](https://i.ibb.co/ZfJt2Xw/1.png)
+![Panel](https://i.ibb.co/QbkghG4/1.png)
 
 ### Interpolación
-_Al hacer click desplegará 2 submenús en el cual hay 2 opciones:_
+* _Esta sección te ayuda a resolver problemas de interpolación lineal y cuadrática de manera rápida._
+* _Al hacer click desplegará **2 submenús** en el cual hay 2 opciones disponibles:_
 
 ![Image text](https://i.ibb.co/MPqg9qx/2.png)
 
 #### **Lineal y Cuadrática**
 
-![Image text](https://i.ibb.co/P1CLyJx/2-1.png)
+![Interpolación menú](https://i.ibb.co/P1CLyJx/2-1.png)
 
-##### Botones
-* **Calcular** - _Calcula la interpolación lineal tomando los valores en pantalla y siguiendo de acuerdo a la fórmula_
-* **Reiniciar** - _Limpia los valores_
+* **NOTA:** _A PARTIR DE ESTA NOTA, LOS BOTONES DE OPCIONES, CASILLAS, CUADROS DE TEXTO Y CUADRO DE RESULTADOS **APLICARÁ GLOBALMENTE** EN INTERPOLACIÓN LINEAL, CUADRÁTICA Y POLINOMIOS DE LAGRANGE_
+
+##### Botones de opciones
+* **Calcular** - _Calcula la interpolación lineal o cuadrática tomando los valores de la parte inferior de la aplicación_
+* **Reiniciar** - _Limpia los valores y los **restablece a 0**_
 
 ##### Casillas de verificación y botones circulares
-* **Calcular error relativo porcentual** - _Calcula el error porcentual tomando el valor de X y f(x) (utilizado solo si el usuario conoce el valor verdadero de f(x)_
-* **Sin redondear** - _El resultado obtenido puede ser largo con muchos decimales_
-* **Redondear** - _El resultado obtenido se resume en un solo entero (si el resultado es 1.4 no se redondea, en cambio si el decimal es mayor que 5 entonces el resultado sería 2)_
-* **Últimos 4 decimales** - _El resultado toma los números enteros y 4 decimales (como la función "Sin Redondear" pero resumido)_
+* **Calcular error relativo porcentual** - _Calcula el error relativo porcentual tomando los valores de Vv (valor verdadero) y Vapx (valor aproximado)_
 
-##### Cuadros de textos y resultados
-* **Campos** - _Se introducen números positivos, negativos, enteros y decimales que representan a cada elemento de la fórmula_
-* **Cuadro de resultados** - _Te muestra el resultado obtenido, la fórmula y el procedimiento por pasos_
+![Error relativo porcentual](https://i.ibb.co/1sBfvNw/4.png)
+
+* **Sin redondear** - _El resultado obtenido es **largo** y puede contener muchos decimales_
+* **Redondear** - _El resultado obtenido serán **únicamente enteros**, es decir, sin decimales (si el resultado es 1.4 no se redondea, en cambio si el decimal es mayor que 5 entonces el resultado de 1.5 sería 2)_
+* **Últimos 4 decimales** - _El resultado obtenido toma los números enteros y **4 decimales** (como la primera función "Sin Redondear" pero resumido)_
+
+##### Campos de texto y resultados
+* **Campos o cuadros** - _Se **introducen números** positivos, negativos, enteros y/o decimales que representan a cada elemento de la fórmula seleccionada_
+* **Cuadro de resultados** - _Aparece a la derecha de las opciones y te muestra el resultado obtenido, así como también la fórmula y el procedimiento por pasos_
 
 ### Polinomios de Lagrange
+* _Esta sección te ayuda a resolver problemas de polinomios de Lagrange de 1ra y 2da orden de manera rápida._
 
-![Image text](https://i.ibb.co/7S6FR5P/2-2.png)
-
-##### Botones
-* **Calcular** - _Calcula la interpolación lineal tomando los valores en pantalla y siguiendo de acuerdo a la fórmula_
-* **Reiniciar** - _Limpia los valores_
+![Polinomios de Lagrange](https://i.ibb.co/7S6FR5P/2-2.png)
 
 ##### Casillas de verificación y botones circulares
-* **Calcular error relativo porcentual** - _Calcula el error porcentual tomando el valor de X y f(x) (utilizado solo si el usuario conoce el valor verdadero de f(x)_
-* **Sin redondear** - _El resultado obtenido puede ser largo con muchos decimales_
-* **Redondear** - _El resultado obtenido se resume en un solo entero (si el resultado es 1.4 no se redondea, en cambio si el decimal es mayor que 5 entonces el resultado sería 2)_
-* **Últimos 4 decimales** - _El resultado toma los números enteros y 4 decimales (como la función "Sin Redondear" pero resumido)_
-* **Primer orden** - _Calcula los polinomios de Lagrange de 1er Orden de acuerdo a la fórmula tomando los valores X, X₀, X₁, f(x₀), f(x₁)_
-* **Segunda orden** - _Calcula los polinomios de Lagrange de 2da Orden de acuerdo a la fórmula tomando los valores X, X₀, X₁, X₂, f(x₀), f(x₁), f(x₂)_
-
-##### Cuadros de textos y resultados
-* **Campos** - _Se introducen números positivos, negativos, enteros y decimales que representan a cada elemento de la fórmula_
-* **Cuadro de resultados** - _Te muestra el resultado obtenido, la fórmula y el procedimiento por pasos_
+* **Primer orden** - _Calcula los polinomios de **Lagrange de 1er Orden** de acuerdo a la fórmula tomando los valores X, X₀, X₁, f(x₀) y f(x₁)_
+* **Segunda orden** - _Calcula los polinomios de **Lagrange de 2da Orden** de acuerdo a la fórmula tomando los valores X, X₀, X₁, X₂, f(x₀), f(x₁) y f(x₂)_
 
 ### Ayuda
-_Al hacer click desplegará 2 submenús en el cual hay 2 opciones:_
+* _Esta sección te ayuda a resolver dudas y obtener más información acerca de los creadores de la aplicación._
+* _Al hacer click desplegará **2 submenús** en el cual hay 2 opciones disponibles:_
 
-![Image text](https://i.ibb.co/nb1DtCj/3.png)
+![Ayuda menú](https://i.ibb.co/nb1DtCj/3.png)
 
 #### **Cómo usar**
-* _Te redirigirá a esta guía para saber cómo usar cada una de las partes de la aplicación_
+* _El botón te redirigirá a esta guía para saber cómo usar y cómo funciona cada una de las partes de la aplicación_
 
 #### **Acerca de**
 ##### Créditos
+* _Se abrirá una nueva ventana con los datos de los creadores de la aplicación y un pequeño mensaje que debe cumplirse_
 
 ![Image text](https://i.ibb.co/R054tXf/3-1.png)
 
-* _Se muestra en una nueva ventana el creador y el colaborador del proyecto junto con las formas de contacto y un aviso como el siguiente_
-* _"Esta aplicación es un trabajo meramente académico, por lo tanto, sólo debe ser usado para fines académicos."_
+* _**NOTA:** LA APLICACIÓN ES UN TRABAJO ACADÉMICO Y DEBE TOMARSE COMO TAL, NI EL LOGOTIPO NI LA APLICACIÓN ESTÁN REGISTRADOS ACTUALMENTE, **SOLO DEBERÁ USARSE PARA FINES ACADÉMICOS**, SU VENTA NO SERÁ PERMITIDA_
 
-### Repositorio
-* _Te redirigirá a los [tags de este repositorio](https://github.com/JohnyDeCoder/calc-polation/tags)_
+### Lanzamientos
+* _Te redirigirá a los [tags de este repositorio](https://github.com/JohnyDeCoder/calc-polation/tags) que son nuevas versiones disponibles para descargar de la aplicación._
 
 ### Salir
 * _Se cerrará la aplicación._
 
 ## Versionado
 
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/JohnyDeCoder/calc-polation/tags).
+Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags de este repositorio](https://github.com/JohnyDeCoder/calc-polation/tags).
 
 ## Autores
 
@@ -117,4 +114,4 @@ Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el a
 
 ## Expresiones de Gratitud
 
-* Muchísimas gracias a los **BetaTesters** por probar nuestra aplicación.
+* _Muchísimas gracias a los **BetaTesters** por probar nuestra aplicación._
