@@ -8,23 +8,23 @@
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
     <AssemblyVersion>1.0.0</AssemblyVersion>
-    <FileVersion>1.0.0-beta</FileVersion>
+    <FileVersion>1.1.0-beta</FileVersion>
     <StartupObject>calc_polation_2022.Program</StartupObject>
     <ApplicationIcon>calpo_ico.ico</ApplicationIcon>
     <SignAssembly>False</SignAssembly>
-    <Version>1.0.0-beta</Version>
+    <Version>1.1.0-beta</Version>
     <Authors>JohnyDeCoder, BrandonMoran11</Authors>
     <Description>Una calculadora para interpolación lineal, cuadrática y polinomios de Lagrange.</Description>
     <PackageIcon>calpo_ico.png</PackageIcon>
     <RepositoryUrl>https://github.com/JohnyDeCoder/calc-polation</RepositoryUrl>
     <PackageProjectUrl></PackageProjectUrl>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageLicenseFile>D:\Descargas\LICENSE</PackageLicenseFile>
+    <PackageLicenseFile></PackageLicenseFile>
     <IsPublishable>True</IsPublishable>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
     <UseWPF>False</UseWPF>
-    <DebugType>portable</DebugType>
+    <DebugType>embedded</DebugType>
     <AssemblyName>calc-polation</AssemblyName>
     <Company>JohnyDeCoder y BrandonMoran11</Company>
   </PropertyGroup>

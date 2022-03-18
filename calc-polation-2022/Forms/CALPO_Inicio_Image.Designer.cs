@@ -39,7 +39,7 @@
             this.picB_Inicio_Image.Image = global::calc_polation_2022.Properties.Resources.Logotipo_Center_Panel;
             this.picB_Inicio_Image.Location = new System.Drawing.Point(0, 0);
             this.picB_Inicio_Image.Name = "picB_Inicio_Image";
-            this.picB_Inicio_Image.Size = new System.Drawing.Size(754, 561);
+            this.picB_Inicio_Image.Size = new System.Drawing.Size(754, 616);
             this.picB_Inicio_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picB_Inicio_Image.TabIndex = 0;
             this.picB_Inicio_Image.TabStop = false;
@@ -48,17 +48,17 @@
             // 
             this.lbl_version.AutoSize = true;
             this.lbl_version.Font = new System.Drawing.Font("Cambria", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.lbl_version.Location = new System.Drawing.Point(676, 544);
+            this.lbl_version.Location = new System.Drawing.Point(676, 599);
             this.lbl_version.Name = "lbl_version";
             this.lbl_version.Size = new System.Drawing.Size(78, 17);
             this.lbl_version.TabIndex = 1;
-            this.lbl_version.Text = "v1.0.0-beta";
+            this.lbl_version.Text = "v1.1.0-beta";
             // 
             // CALPO_Inicio_Image
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(754, 561);
+            this.ClientSize = new System.Drawing.Size(754, 616);
             this.Controls.Add(this.lbl_version);
             this.Controls.Add(this.picB_Inicio_Image);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
