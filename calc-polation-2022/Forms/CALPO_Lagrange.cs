@@ -37,235 +37,239 @@ namespace calc_polation_2022
             ifTxtBoxEmpty(gb_values); // Determina si hay TextBox vacíos.
             ifTxtBoxContains(gb_values); // Determina si algunos de los TextBox tengan solamente - o punto.
 
-            double part1_orden_1, part2_orden_1, result_orden_1, 
-                part1_orden_2, part1_orden_2_div_1, part1_orden_2_div_2, 
+            double part1_orden_1, part2_orden_1, result_orden_1,
+                part1_orden_2, part1_orden_2_div_1, part1_orden_2_div_2,
                 part2_orden_2, part2_orden_2_div_1, part2_orden_2_div_2,
                 part3_orden_2, part3_orden_2_div_1, part3_orden_2_div_2,
-                result_orden_2, 
+                result_orden_2,
                 percent1, percent2, result_percent; // Variables.
 
-            if (txtEmpty == true || txtContains == true) // Si hay algún TextBox vacío o únicamenmte con - o punto.
+            if (cb_calculate_percent.Checked == true) // ---- CheckBox.Checked = True ----
             {
-                MessageBox.Show(
-                    "No se admiten campos vacíos o sin dígitos, por favor rellene los campos faltantes con valores válidos para calcular.",
-                    "Advertencia",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                    );
-
-                txtEmpty = false; // Se reinicia la variable si ya se había encontrado un TextBox vacío.
-                txtContains = false; // Se reinicia la variable si ya se había encontrado un TextBox con - o punto.
-            }
-            else
-            {
-                if (rb_orden_1.Checked == true)
+                if (txtEmpty == true || txtContains == true) // Si hay algún TextBox vacío o únicamenmte con - o punto.
                 {
-                    txt_x2.Enabled = false;
-                    txt_x2.Text = "0";
-                    txt_y2.Enabled  = false;
-                    txt_y2.Text = "0";
+                    MessageBox.Show(
+                        "No se admiten campos vacíos o sin dígitos, por favor rellene los campos faltantes con valores válidos para calcular.",
+                        "Advertencia",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                        );
 
-                    if (cb_calculate_percent.Checked == true) // ---- CheckBox.Checked = True ----
+                    txtEmpty = false; // Se reinicia la variable si ya se había encontrado un TextBox vacío.
+                    txtContains = false; // Se reinicia la variable si ya se había encontrado un TextBox con - o punto.
+                }
+                else
+                {
+                    if (rb_noRedondeo.Checked == true)
                     {
-                        if (rb_noRedondeo.Checked == true)
+                        try
                         {
-                            try
-                            {
-                                // Operaciones.
-                                percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
-                                percent2 = percent1 / double.Parse(txt_x.Text);
-                                result_percent = percent2 * 100;
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show(
-                                "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-
-                                Application.Restart(); // Reiniciar la aplicación automáticamente.
-                                throw;
-                            }
-
-                            if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
-                            {
-                                MessageBox.Show(
-                                "No se puede dividir un número entre 0.",
-                                "Math ERROR",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-                            }
-                            else
-                            {
-                                lbox_results.Items.Clear(); // Reseteo del listBox.
-
-                                // Impresión de valores.
-                                lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("Et = " + result_percent);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                                lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add(
-                                    "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
-                                    );
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
-                            }
+                            // Operaciones.
+                            percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
+                            percent2 = percent1 / double.Parse(txt_x.Text);
+                            result_percent = percent2 * 100;
                         }
-                        else if (rb_redondeo.Checked == true)
+                        catch (Exception)
                         {
-                            try
-                            {
-                                // Operaciones.
-                                percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
-                                percent2 = percent1 / double.Parse(txt_x.Text);
-                                result_percent = percent2 * 100;
-                                result_percent = Math.Round(result_percent);
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show(
-                                "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
+                            MessageBox.Show(
+                            "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                            );
+
+                            Application.Restart(); // Reiniciar la aplicación automáticamente.
+                            throw;
+                        }
+
+                        if (result_percent.ToString() == "NaN" || result_percent.ToString().Contains('∞')) // Si hay algún error matemático.
+                        {
+                            MessageBox.Show(
+                            "No se puede dividir un número entre 0.",
+                            "Math ERROR",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                            );
+                        }
+                        else
+                        {
+                            lbox_results.Items.Clear(); // Reseteo del listBox.
+
+                            // Impresión de valores.
+                            lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
+                            lbox_results.Items.Add("Et = " + result_percent);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("─────────────────────────────────");
+                            lbox_results.Items.Add("");
+                            templateETP(); // Plantilla error relativo porcentual.
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("─────────────────────────────────");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add(
+                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el ERROR verdadero " +
+                                "entre el VALOR verdadero y se multiplica por el 100%."
                                 );
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + " * 100%" + igual + result_percent);
+                        }
+                    }
+                    else if (rb_redondeo.Checked == true)
+                    {
+                        try
+                        {
+                            // Operaciones.
+                            percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
+                            percent2 = percent1 / double.Parse(txt_x.Text);
+                            result_percent = percent2 * 100;
+                            result_percent = Math.Round(result_percent);
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show(
+                            "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                            );
 
-                                Application.Restart(); // Reiniciar la aplicación automáticamente.
-                                throw;
-                            }
+                            Application.Restart(); // Reiniciar la aplicación automáticamente.
+                            throw;
+                        }
 
-                            if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
-                            {
-                                MessageBox.Show(
-                                "No se puede dividir un número entre 0.",
-                                "Math ERROR",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
+                        if (result_percent.ToString() == "NaN" || result_percent.ToString().Contains('∞')) // Si hay algún error matemático.
+                        {
+                            MessageBox.Show(
+                            "No se puede dividir un número entre 0.",
+                            "Math ERROR",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                            );
+                        }
+                        else
+                        {
+                            lbox_results.Items.Clear(); // Reseteo del listBox.
+
+                            // Impresión de valores.
+                            lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
+                            lbox_results.Items.Add("Et = " + result_percent);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("─────────────────────────────────");
+                            lbox_results.Items.Add("");
+                            templateETP(); // Plantilla error relativo porcentual.
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("─────────────────────────────────");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add(
+                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el ERROR verdadero " +
+                                "entre el VALOR verdadero y se multiplica por el 100%."
                                 );
-                            }
-                            else
-                            {
-                                lbox_results.Items.Clear(); // Reseteo del listBox.
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + " * 100%" + igual + result_percent);
+                        }
+                    }
+                    else // Últimos 4 decimales.
+                    {
+                        try
+                        {
+                            // Operaciones.
+                            percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
+                            percent2 = percent1 / double.Parse(txt_x.Text);
+                            result_percent = percent2 * 100;
+                            result_percent = Math.Round(result_percent, 4);
+                        }
+                        catch (Exception)
+                        {
+                            MessageBox.Show(
+                            "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                            );
 
-                                // Impresión de valores.
-                                lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("Et = " + result_percent);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                                lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add(
-                                    "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
-                                    );
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
-                            }
+                            Application.Restart(); // Reiniciar la aplicación automáticamente.
+                            throw;
+                        }
+
+                        if (result_percent.ToString() == "NaN" || result_percent.ToString().Contains('∞')) // Si hay algún error matemático.
+                        {
+                            MessageBox.Show(
+                            "No se puede dividir un número entre 0.",
+                            "Math ERROR",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error
+                            );
                         }
                         else // Últimos 4 decimales.
                         {
-                            try
-                            {
-                                // Operaciones.
-                                percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
-                                percent2 = percent1 / double.Parse(txt_x.Text);
-                                result_percent = percent2 * 100;
-                                result_percent = Math.Round(result_percent, 4);
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show(
-                                "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
+                            lbox_results.Items.Clear(); // Reseteo del listBox.
+
+                            // Impresión de valores.
+                            lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
+                            lbox_results.Items.Add("Et = " + result_percent);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("─────────────────────────────────");
+                            lbox_results.Items.Add("");
+                            templateETP(); // Plantilla error relativo porcentual.
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("─────────────────────────────────");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add(
+                                "• Paso final: Se obtiene el error relativo porcentual dividiendo el ERROR verdadero " +
+                                "entre el VALOR verdadero y se multiplica por el 100%."
                                 );
-
-                                Application.Restart(); // Reiniciar la aplicación automáticamente.
-                                throw;
-                            }
-
-                            if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
-                            {
-                                MessageBox.Show(
-                                "No se puede dividir un número entre 0.",
-                                "Math ERROR",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-                            }
-                            else // Últimos 4 decimales.
-                            {
-                                lbox_results.Items.Clear(); // Reseteo del listBox.
-
-                                // Impresión de valores.
-                                lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("Et = " + result_percent);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                                lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add(
-                                    "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
-                                    );
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
-                            }
+                            lbox_results.Items.Add("");
+                            lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + " * 100%" + igual + result_percent);
                         }
                     }
-                    else // ---- CheckBox.Checked = False ----
+                }
+            }
+            else // ---- CheckBox.Checked = False ----
+            {
+                if (txtEmpty == true || txtContains == true) // Si hay algún TextBox vacío o únicamenmte con - o punto.
+                {
+                    MessageBox.Show(
+                        "No se admiten campos vacíos o sin dígitos, por favor rellene los campos faltantes con valores válidos para calcular.",
+                        "Advertencia",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                        );
+
+                    txtEmpty = false; // Se reinicia la variable si ya se había encontrado un TextBox vacío.
+                    txtContains = false; // Se reinicia la variable si ya se había encontrado un TextBox con - o punto.
+                }
+                else
+                {
+                    if (rb_orden_1.Checked == true)
                     {
                         if (rb_noRedondeo.Checked == true)
                         {
@@ -338,7 +342,7 @@ namespace calc_polation_2022
                                 lbox_results.Items.Add("• Tercer paso: Se resuelve la segunda parte y se multiplica por f(x₁).");
                                 lbox_results.Items.Add("");
                                 lbox_results.Items.Add(
-                                    "f₁(x)" + igual + "(" +txt_x.Text + menos + txt_x0.Text + entre + txt_x1.Text + menos + txt_x0.Text + ") " +
+                                    "f₁(x)" + igual + "(" + txt_x.Text + menos + txt_x0.Text + entre + txt_x1.Text + menos + txt_x0.Text + ") " +
                                     txt_y1.Text + igual + part2_orden_1
                                     );
                                 lbox_results.Items.Add("");
@@ -516,214 +520,9 @@ namespace calc_polation_2022
                             }
                         }
                     }
-                }
-                else // If rb_orden_2.Checked == true
-                {
-                    txt_x2.Enabled = true;
-                    txt_y2.Enabled = true;
-
-                    if (cb_calculate_percent.Checked == true) // ---- CheckBox.Checked = True ----
+                    else // If rb_orden_2.Checked == true
                     {
-                        if (rb_noRedondeo.Checked == true)
-                        {
-                            try
-                            {
-                                // Operaciones.
-                                percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
-                                percent2 = percent1 / double.Parse(txt_x.Text);
-                                result_percent = percent2 * 100;
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show(
-                                "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
 
-                                Application.Restart(); // Reiniciar la aplicación automáticamente.
-                                throw;
-                            }
-
-                            if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
-                            {
-                                MessageBox.Show(
-                                "No se puede dividir un número entre 0.",
-                                "Math ERROR",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-                            }
-                            else
-                            {
-                                lbox_results.Items.Clear(); // Reseteo del listBox.
-
-                                // Impresión de valores.
-                                lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("Et = " + result_percent);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                                lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add(
-                                    "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
-                                    );
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
-                            }
-                        }
-                        else if (rb_redondeo.Checked == true)
-                        {
-                            try
-                            {
-                                // Operaciones.
-                                percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
-                                percent2 = percent1 / double.Parse(txt_x.Text);
-                                result_percent = percent2 * 100;
-                                result_percent = Math.Round(result_percent);
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show(
-                                "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-
-                                Application.Restart(); // Reiniciar la aplicación automáticamente.
-                                throw;
-                            }
-
-                            if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
-                            {
-                                MessageBox.Show(
-                                "No se puede dividir un número entre 0.",
-                                "Math ERROR",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-                            }
-                            else
-                            {
-                                lbox_results.Items.Clear(); // Reseteo del listBox.
-
-                                // Impresión de valores.
-                                lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("Et = " + result_percent);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                                lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add(
-                                    "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
-                                    );
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
-                            }
-                        }
-                        else // Últimos 4 decimales.
-                        {
-                            try
-                            {
-                                // Operaciones.
-                                percent1 = double.Parse(txt_x.Text) - double.Parse(txt_fx.Text);
-                                percent2 = percent1 / double.Parse(txt_x.Text);
-                                result_percent = percent2 * 100;
-                                result_percent = Math.Round(result_percent, 4);
-                            }
-                            catch (Exception)
-                            {
-                                MessageBox.Show(
-                                "Se ha detectado un error mientras se realizaba su operación, por favor asegúrese de introducir datos correctos.",
-                                "Error",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-
-                                Application.Restart(); // Reiniciar la aplicación automáticamente.
-                                throw;
-                            }
-
-                            if (result_percent.ToString() == "NaN") // Si hay algún error matemático.
-                            {
-                                MessageBox.Show(
-                                "No se puede dividir un número entre 0.",
-                                "Math ERROR",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error
-                                );
-                            }
-                            else // Últimos 4 decimales.
-                            {
-                                lbox_results.Items.Clear(); // Reseteo del listBox.
-
-                                // Impresión de valores.
-                                lbox_results.Items.Add("RESULTADO DEL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("Et = " + result_percent);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-                                lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("─────────────────────────────────");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("PROCEDIMIENTO POR PASOS");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Primer paso: Se remplazan los valores de acuerdo a la fórmula.");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("• Segundo paso: Se obtiene el valor del error verdadero (Ev).");
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Ev" + igual + txt_x.Text + menos + txt_fx.Text + igual + percent1);
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add(
-                                    "• Paso final: Se obtiene el error relativo porcentual dividiendo el error verdadero entre el valor verdadero y multiplicandolo por 100."
-                                    );
-                                lbox_results.Items.Add("");
-                                lbox_results.Items.Add("Et" + igual + percent1 + entre + txt_x.Text + "* 100%" + igual + result_percent);
-                            }
-                        }
-                    }
-                    else // ---- CheckBox.Checked = False ----
-                    {
                         if (rb_noRedondeo.Checked == true)
                         {
                             try
@@ -1093,7 +892,13 @@ namespace calc_polation_2022
 
         private void btn_reset_Click(object sender, EventArgs e)
         {
-            reset();
+            reset(gb_values);
+
+            if (cb_calculate_percent.Checked == true)
+            {
+                lbox_results.Items.Add("");
+                lbox_results.Items.Add("• Ingrese el valor verdadero en Vv y el valor aproximado en Vapx.");
+            }
         }
 
         private void cb_calculate_percent_CheckedChanged(object sender, EventArgs e)
@@ -1111,26 +916,48 @@ namespace calc_polation_2022
 
             if (cb_calculate_percent.Checked == true)
             {
-                ifTxtBoxEmpty(gb_values); // Determina si hay TextBox vacíos.
                 lbox_results.Items.Clear(); // Reseteo del listBox.
 
                 templateETP();
 
-                txt_x0.Enabled = false;
-                txt_x1.Enabled = false;
-                txt_x2.Enabled = false;
-                txt_y0.Enabled = false;
-                txt_y1.Enabled = false;
-                txt_y2.Enabled = false;
+                lbox_results.Items.Add("");
+                lbox_results.Items.Add("• Ingrese el valor verdadero en Vv y el valor aproximado en Vapx.");
 
-                txt_x0.Text = "0";
-                txt_x1.Text = "0";
-                txt_x2.Text = "0";
-                txt_y0.Text = "0";
-                txt_y1.Text = "0";
-                txt_y2.Text = "0";
+                lbl_x.Text = "Vv =";
+                lbl_vv.Visible = true;
+
+                lbl_fx.Text = "Vapx =";
+                lbl_va.Visible = true;
+
+                txt_x.Text = "0";
+
+                txt_x0.Enabled = false;
+                txt_x0.Visible = false;
+                lbl_x0.Visible = false; // Label.
+
+                txt_x1.Enabled = false;
+                txt_x1.Visible = false;
+                lbl_x1.Visible = false; // Label.
+
+                txt_x2.Enabled = false;
+                txt_x2.Visible = false;
+                lbl_x2.Visible = false; // Label.
+
+                txt_y0.Enabled = false;
+                txt_y0.Visible = false;
+                lbl_y0.Visible = false; // Label.
+
+                txt_y1.Enabled = false;
+                txt_y1.Visible = false;
+                lbl_y1.Visible = false; // Label.
+
+                txt_y2.Enabled = false;
+                txt_y2.Visible = false;
+                lbl_y2.Visible = false; // Label.
 
                 txt_fx.Enabled = true;
+
+                gb_values.Size = new Size(730, 75);
             }
             else if (rb_orden_1.Checked == true)
             {
@@ -1138,27 +965,42 @@ namespace calc_polation_2022
 
                 templateLagrange1();
 
+                lbl_x.Text = "X =";
+                lbl_vv.Visible = false;
+
+                lbl_fx.Text = "F₁(X) =";
+                lbl_va.Visible = false;
+
+                txt_x.Text = "0";
+
                 txt_x0.Enabled = true;
+                txt_x0.Visible = true;
+                lbl_x0.Visible = true; // Label.
+
                 txt_x1.Enabled = true;
-                txt_x2.Enabled = false;
+                txt_x1.Visible = true;
+                lbl_x1.Visible = true; // Label.
+
                 txt_y0.Enabled = true;
+                txt_y0.Visible = true;
+                lbl_y0.Visible = true; // Label.
+
                 txt_y1.Enabled = true;
+                txt_y1.Visible = true;
+                lbl_y1.Visible = true; // Label.
+
+                txt_x2.Enabled = false;
+                txt_x2.Visible = true;
+                lbl_x2.Visible = true; // Label.
+
                 txt_y2.Enabled = false;
+                txt_y2.Visible = true;
+                lbl_y2.Visible = true; // Label.
 
                 txt_fx.Enabled = false;
-                if (txt_fx.Text == string.Empty)
-                {
-                    txt_fx.Text = "0";
-                }
-
-                if (txt_x2.Text == string.Empty)
-                {
-                    txt_x2.Text = "0";
-                }
-                else // Sí, y2 o f(x2) vacío
-                {
-                    txt_y2.Text = "0";
-                }
+                gb_values.Size = new Size(730, 254);
+                
+                txt_fx.Text = "0";
             }
             else
             {
@@ -1166,51 +1008,81 @@ namespace calc_polation_2022
 
                 templateLagrange2();
 
+                lbl_x.Text = "X =";
+                lbl_vv.Visible = false;
+
+                lbl_fx.Text = "F₂(X) =";
+                lbl_va.Visible = false;
+
+                txt_x.Text = "0";
+
                 txt_x0.Enabled = true;
+                txt_x0.Visible = true;
+                lbl_x0.Visible = true; // Label.
+
                 txt_x1.Enabled = true;
+                txt_x1.Visible = true;
+                lbl_x1.Visible = true; // Label.
+
                 txt_x2.Enabled = true;
+                txt_x2.Visible = true;
+                lbl_x2.Visible = true; // Label.
+
                 txt_y0.Enabled = true;
+                txt_y0.Visible = true;
+                lbl_y0.Visible = true; // Label.
+
                 txt_y1.Enabled = true;
+                txt_y1.Visible = true;
+                lbl_y1.Visible = true; // Label.
+
                 txt_y2.Enabled = true;
+                txt_y2.Visible = true;
+                lbl_y2.Visible = true; // Label.
 
                 txt_fx.Enabled = false;
-                if (txt_fx.Text == string.Empty)
-                {
-                    txt_fx.Text = "0";
-                }
+                gb_values.Size = new Size(730, 254);
+
+                txt_fx.Text = "0";
             }
         }
 
         private void rb_orden_1_CheckedChanged(object sender, EventArgs e)
         {
             lbox_results.Items.Clear(); // Reseteo del listBox.
+
             templateLagrange1();
+
+            lbl_fx.Text = "F₁(X) =";
 
             txt_x2.Enabled = false;
             txt_y2.Enabled = false;
-            if (txt_x2.Text == string.Empty && txt_y2.Text == string.Empty)
-            {
-                txt_x2.Text = "0";
-                txt_y2.Text = "0";
-            }
-            else 
-            {
-                if (txt_x2.Text == string.Empty)
-                {
-                    txt_x2.Text = "0";
-                }
+            //if (txt_x2.Text == string.Empty && txt_y2.Text == string.Empty)
+            //{
+            //    txt_x2.Text = "0";
+            //    txt_y2.Text = "0";
+            //}
+            //else 
+            //{
+            //    if (txt_x2.Text == string.Empty)
+            //    {
+            //        txt_x2.Text = "0";
+            //    }
 
-                if (txt_y2.Text == string.Empty)
-                {
-                    txt_y2.Text = "0";
-                }
-            }
+            //    if (txt_y2.Text == string.Empty)
+            //    {
+            //        txt_y2.Text = "0";
+            //    }
+            //}
         }
 
         private void rb_orden_2_CheckedChanged(object sender, EventArgs e)
         {
             lbox_results.Items.Clear(); // Reseteo del listBox.
+
             templateLagrange2();
+
+            lbl_fx.Text = "F₂(X) =";
 
             txt_x2.Enabled = true;
             txt_y2.Enabled = true;
@@ -1299,7 +1171,7 @@ namespace calc_polation_2022
             foreach (Control oControls in CALPO_Lineal.Controls)
             {
                 // Si encuentra un TextBox vacío.
-                if (oControls is TextBox & oControls.Text == string.Empty)
+                if (oControls is TextBox & oControls.Enabled == true & oControls.Text == string.Empty)
                 {
                     txtEmpty = true;
                 }
@@ -1312,7 +1184,7 @@ namespace calc_polation_2022
             foreach (Control oControls in CALPO_Lineal.Controls)
             {
                 // Si encuentra un TextBox con únicamente un - o punto o ambos juntos.
-                if (oControls is TextBox & oControls.Text == "-" || oControls.Text == "." ||
+                if (oControls is TextBox & oControls.Enabled == true & oControls.Text == "-" || oControls.Text == "." ||
                     oControls.Text.Contains("-.") || oControls.Text.Contains(".-") ||
                     oControls.Text.EndsWith("-"))
                 {
@@ -1321,7 +1193,7 @@ namespace calc_polation_2022
             }
         }
 
-        private void reset()
+        private void reset(Control CALPO_Lineal)
         {
             lbox_results.Items.Clear(); // Reseteo del listBox.
 
@@ -1339,14 +1211,13 @@ namespace calc_polation_2022
             }
 
             // Restablece por default cada campo.
-            txt_x.Text = "0";
-            txt_x0.Text = "0";
-            txt_x1.Text = "0";
-            txt_x2.Text = "0";
-            txt_y0.Text = "0";
-            txt_y1.Text = "0";
-            txt_y2.Text = "0";
-            txt_fx.Text = "0";
+            foreach (Control oControls in CALPO_Lineal.Controls)
+            {
+                if (oControls is TextBox)
+                {
+                    oControls.Text = "0";
+                }
+            }
         }
 
         private void templateLagrange1()
@@ -1369,8 +1240,9 @@ namespace calc_polation_2022
         {
             lbox_results.Items.Add("FÓRMULA PARA CALCULAR EL ERROR RELATIVO PORCENTUAL");
             lbox_results.Items.Add("");
-            lbox_results.Items.Add("• Ev = valor verdadero - valor aproximado");
-            lbox_results.Items.Add("• Et = Ev / valor verdadero * 100%");
+            lbox_results.Items.Add("• Ev = valor verdadero(Vv) - valor aproximado(Vapx)");
+            lbox_results.Items.Add("• Ev = error verdadero");
+            lbox_results.Items.Add("• Et = Ev ÷ valor verdadero * 100%");
         }
     }
 }

@@ -589,10 +589,8 @@ namespace calc_polation_2022
 
                 txt_fx.Enabled = false;
                 gb_values.Size = new Size(730, 194);
-                if (txt_fx.Text == string.Empty)
-                {
-                    txt_fx.Text = "0";
-                }
+                
+                txt_fx.Text = "0";
             }
         }
 
